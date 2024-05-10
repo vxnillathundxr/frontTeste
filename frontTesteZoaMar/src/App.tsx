@@ -1,11 +1,11 @@
 import { Header } from "./components/header";
-import { Shirts } from "./components/shirts";
+import { SubHeader } from "./components/subHeader";
 
 export function App() {
     return(
         <div className="">
             <Header /> 
-            <Shirts />
+            <SubHeader />
         </div>
 
         
