@@ -1,7 +1,10 @@
 export function SubHeader(){
     return(
         <div className="text-black font-bold">
-              <h1>Promoção compre dois moletons e ganhe 3 camisetas</h1>
+            <div className="flex flex-col">
+              <h1>Promoção</h1>
+              <p>Compre dois moletons e ganhe 3 camisetas</p>
+            </div>
         </div>
         // <div>
         //     <input placeholder="Buscar..."/>

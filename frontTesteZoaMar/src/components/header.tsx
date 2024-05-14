@@ -1,3 +1,5 @@
+import React, { useState } from 'react'; 
+
 import cartIcon from '../assets/cartIcon.svg' 
 import searchIcon from '../assets/searchIcon.svg'
 import userIcon from '../assets/userIcon.svg'
@@ -14,7 +16,13 @@ export function Header(){
                 <div className='flex flex-end justify-end gap-2'>
 
                         <div className="flex gap-5 items-center">
-                            <img src={searchIcon} className="size-6"/>
+                            <div className="border border-white/15 rounded-sm text-sm flex itens-center gap-1 outline-none">
+                            <img src={searchIcon}  id="icone" className="size-6"/>
+                                <input className="bg-transparent" placeholder='Buscar...' /> 
+                            </div>
+
+                        
+
                             <img src={userIcon}  className="size-6"/>
                             <img src={cartIcon}  className="size-6"/>
                         </div>
