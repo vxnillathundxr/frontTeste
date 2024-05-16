@@ -1,5 +1,3 @@
-import React, { useState } from 'react'; 
-
 import cartIcon from '../assets/cartIcon.svg' 
 import searchIcon from '../assets/searchIcon.svg'
 import userIcon from '../assets/userIcon.svg'
@@ -20,11 +18,12 @@ export function Header(){
                             <img src={searchIcon}  id="icone" className="size-6"/>
                                 <input className="bg-transparent" placeholder='Buscar...' /> 
                             </div>
-
                         
-
-                            <img src={userIcon}  className="size-6"/>
-                            <img src={cartIcon}  className="size-6"/>
+                        <nav className="flex gap-4">
+                            <a href=""><img src={userIcon}  className="size-6"/></a>
+                            <a href=""><img src={cartIcon}  className="size-6"/></a>
+                        </nav>
+  
                         </div>
                 </div>
             </div>

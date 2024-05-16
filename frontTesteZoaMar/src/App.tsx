@@ -4,11 +4,12 @@ import { UserPage } from "./user";
 
 export function App() {
     return(
-        <div className="">
+        <div>
             <Header /> 
             <SubHeader />
             <UserPage />
         </div>
+     
 
         
     )
