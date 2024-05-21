@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { HandleClick } from './search'
+import BotaoParaInput from './search'
 
 
 import cartIcon from '../assets/cartIcon.svg' 
@@ -24,7 +24,7 @@ export function Header(){
                     </div>
                     {/* userIcon e cartIcon */}
                     <div className="flex gap-5">
-                            <HandleClick />
+                            <BotaoParaInput />
                             {/* <img src={searchIcon}  id="icone" className="size-6"/> */}
                         <nav className="flex gap-4">
                             <a href=""><img src={userIcon}  className="size-6"/></a>

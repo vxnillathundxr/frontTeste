@@ -6,8 +6,9 @@ import {
 } from "react-router-dom";
 
 
-import { Inicio } from './inicio.tsx'
+// import { HandleClick} from './inicio.tsx'
 import './index.css'
+import { Inicio } from './inicio';
 
 const router = createBrowserRouter([
 
