@@ -1,3 +1,7 @@
+import React, {useState} from 'react'
+import { HandleClick } from './search'
+
+
 import cartIcon from '../assets/cartIcon.svg' 
 import searchIcon from '../assets/searchIcon.svg'
 import userIcon from '../assets/userIcon.svg'
@@ -5,37 +9,28 @@ import menuIcon from '../assets/menuIcon.svg'
 
 export function Header(){
     return(
-        <div className="w-full">
-            <div className="bg-black w-full h-12 gap-2 p-5 flex flex-row justify-between">
-                <div className='flex items-center flex-row gap-2'>
-                <img src={menuIcon} />
-                    <h1 className="text-2xl">ZoaMar</h1>
+            // div principal
+            <div className="w-full bg-black h-12 gap-2 p-5 flex flex-row justify-between pb-10">
+             {/*div IconMenu e ZoaMar  */}
+                <div className="flex gap-2 pt-3">
+                    <nav className="flex items-center gap-2">
+                        <a href=""><img src={menuIcon} /></a>
+                        <a href={'/'} className="text-2xl pb-1">ZoaMar</a>
+                    </nav>
                 </div>
-                <div className='flex flex-end justify-end gap-2'>
-
-                        <div className="flex gap-5 items-center">
-                            <div className="border border-white/15 rounded-sm text-sm flex itens-center gap-1 outline-none">
-                            <img src={searchIcon}  id="icone" className="size-6"/>
-                                <input className="bg-transparent" placeholder='Buscar...' /> 
-                            </div>
-                        
+                {/* divs left */}
+                    <div className="flex gap-5 pb-">
+                {/* div searchIcon */}
+                    </div>
+                    {/* userIcon e cartIcon */}
+                    <div className="flex gap-5">
+                            <HandleClick />
+                            {/* <img src={searchIcon}  id="icone" className="size-6"/> */}
                         <nav className="flex gap-4">
                             <a href=""><img src={userIcon}  className="size-6"/></a>
                             <a href=""><img src={cartIcon}  className="size-6"/></a>
                         </nav>
-  
-                        </div>
-                </div>
+                    </div>
             </div>
-        </div>
-
     )
 }
-{/* <div className="pt-20">
-      <nav className="flex gap-40">
-          <a href="">Camisetas</a>
-          <a href="">Calças</a>
-          <a href="">Moletons</a>
-          <a href="">Tênis</a>
-      </nav>
-</div> */}

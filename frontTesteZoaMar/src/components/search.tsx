@@ -1,10 +1,12 @@
 import React, {useState} from "react"
+import searchIcon from '../assets/searchIcon.svg'
+
 
 
 // interface SrcProps{
 //     src: string
 // }
-export function HandleClick (){
+export function HandleClick(): any{
 
         const Handle = () => {
             const [mostrarInput, setMostrarInput] = useState(false);
@@ -15,9 +17,8 @@ export function HandleClick (){
 
             return(
                 <div>
-                    {mostrarInput ? (<input placeholder="Buscar..."/>) : (<button onClick={handleClick}></button> )}
+                    {mostrarInput ? (<input placeholder="Buscar..."/>) : (<button onClick={handleClick}><img src={searchIcon}  id="icone" className="size-6"/></button> )}
                 </div>
             )
-        }
-            
+        }            
 }
