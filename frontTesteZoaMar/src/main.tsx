@@ -5,17 +5,25 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-
-// import { HandleClick} from './inicio.tsx'
 import './index.css'
 import { Inicio } from './inicio';
+import { CartPage } from './cart';
+import { UserPage } from './user';
 
 const router = createBrowserRouter([
 
   {
     path: "/",
     element: <Inicio />
-  }
+  },
+  {
+    path: "/cart",
+    element: <CartPage />
+  },
+  {
+    path: "/user",
+    element: <UserPage />
+  },
 
 ])
 

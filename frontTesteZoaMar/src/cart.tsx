@@ -1,11 +1,11 @@
 import { Header } from "./components/header";
+import allStar from './assets/allStarIcon.svg'
 
-
-export function UserPage(){
+export function CartPage(){
     return(
         <div>
             <Header />
-            <h1>User</h1>
+            <h1>Cart</h1>
         </div>
     )
 }
