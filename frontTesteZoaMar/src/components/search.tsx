@@ -19,7 +19,7 @@ const BotaoParaInput: React.FC = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="  ">
             {!mostrarInput && (
               <button
                 className="flex size-6 text-white rounded transition-opacity duration-300 hover:bg-white-600/10"
@@ -28,20 +28,21 @@ const BotaoParaInput: React.FC = () => {
                 <img src={searchIcon} alt="searchIcon" />
               </button>
             )}
-      <div className="flex gap-2">
+      <div className="flex gap-2 w-full">
             {mostrarInput && (
               <input 
               type="text"
-              className="flex flex-row border-2 w-full "
+              className="flex flex-row border-2 w-full bg-transparent "
               value={texto}
               onChange={handleChange}
               onBlur={handleBlur}
-              placeholder="Buscar..."
-              ></input>
+              placeholder="Buscar...">
+              </input>
               )}
               {mostrarInput &&(
-                <button className="" onClick={handleBlur}><img src={XIcon}/></button>
-              )}
+           <button className="" onClick={handleBlur}><img src={XIcon}/></button>
+           )}
+             
       </div>
      </div>
   );

@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import BotaoParaInput from './search'
+import BotaoParaMenu from './menu'
+import ExpandableMenu from './menu'
 
 
 import cartIcon from '../assets/cartIcon.svg' 
 import userIcon from '../assets/userIcon.svg'
-import menuIcon from '../assets/menuIcon.svg'
+// import menuIcon from '../assets/menuIcon.svg'
 
 export function Header(){
     return(
@@ -13,7 +15,11 @@ export function Header(){
              {/*div IconMenu e ZoaMar  */}
                 <div className="flex gap-2 pt-3">
                     <nav className="flex items-center gap-2">
-                        <a href=""><img src={menuIcon} /></a>
+                        <div className="m-0 p-0">
+                        {/* <BotaoParaMenu /> */}
+                        <ExpandableMenu />
+                        {/* <a href=""><img src={menuIcon} /></a> */}
+                        </div>
                         <a href={'/'} className="text-white text-2xl pb-1">ZoaMar</a>
                     </nav>
                 </div>
