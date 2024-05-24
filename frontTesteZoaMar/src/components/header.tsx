@@ -13,8 +13,8 @@ export function Header(){
             // div principal
             <div className="w-full bg-black h-12 gap-2 p-5 flex flex-row justify-between pb-10">
              {/*div IconMenu e ZoaMar  */}
-                <div className="flex gap-2 pt-3">
-                    <nav className="flex items-center gap-2">
+                <div className="flex pt-3">
+                    <nav className="flex items-center">
                         <div className="m-0 p-0">
                         {/* <BotaoParaMenu /> */}
                         <ExpandableMenu />

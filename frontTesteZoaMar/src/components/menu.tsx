@@ -1,7 +1,36 @@
-// import React, { useState } from "react";
+import React, { useState } from 'react';
 import menuIcon from '../assets/menuIcon.svg'
 // import XIcon from '../assets/XIcon.svg'
 
+
+const ExpandableMenu: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="relative">
+      <button
+        className=" text-white py-2 px-4 rounded"
+        onClick={toggleMenu}
+      >
+             <img src={menuIcon} alt="menuIcon" />
+      </button>
+      {isOpen && (
+        <div className="absolute mt-2 bg-white p-2 rounded shadow">
+          <a href='/camisetas' className="block py-1">Camisetas</a>
+          <a href='/moletons' className="block py-1">Moletons</a>
+          <a href='/calcas' className="block py-1">Calça</a>
+          <a href='/tenis' className="block py-1">Tênis</a>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default ExpandableMenu;
 // const BotaoParaMenu: React.FC = () => {
 //   const [mostrarMenu, setMostrarMenu] = useState<boolean>(false);
 //   const [texto, setTexto] = useState<string>("");
@@ -49,34 +78,3 @@ import menuIcon from '../assets/menuIcon.svg'
 // };
 
 // export default BotaoParaMenu;
-
-import React, { useState } from 'react';
-
-const ExpandableMenu: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  return (
-    <div className="relative">
-      <button
-        className=" text-white py-2 px-4 rounded"
-        onClick={toggleMenu}
-      >
-             <img src={menuIcon} alt="menuIcon" />
-      </button>
-      {isOpen && (
-        <div className="absolute right-0 mt-2 bg-white p-2 rounded shadow">
-          <a href='/camisetas' className="block py-1">Camisetas</a>
-          <a href='/moletons' className="block py-1">Moletons</a>
-          <a href='/calcas' className="block py-1">Calça</a>
-          <a href='/tenis' className="block py-1">Tênis</a>
-        </div>
-      )}
-    </div>
-  );
-};
-
-export default ExpandableMenu;

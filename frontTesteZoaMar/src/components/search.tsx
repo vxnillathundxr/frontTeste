@@ -32,7 +32,7 @@ const BotaoParaInput: React.FC = () => {
             {mostrarInput && (
               <input 
               type="text"
-              className="flex flex-row border-2 w-full bg-transparent "
+              className="flex flex-row border-2 w-full bg-transparent rounded text-white "
               value={texto}
               onChange={handleChange}
               onBlur={handleBlur}
@@ -42,7 +42,6 @@ const BotaoParaInput: React.FC = () => {
               {mostrarInput &&(
            <button className="" onClick={handleBlur}><img src={XIcon}/></button>
            )}
-             
       </div>
      </div>
   );

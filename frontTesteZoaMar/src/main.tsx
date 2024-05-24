@@ -9,6 +9,10 @@ import './index.css'
 import { Inicio } from './inicio';
 import { CartPage } from './cart';
 import { UserPage } from './user';
+import { Camisetas } from './abas/camisetas';
+import { Moletons } from './abas/moletons';
+import { Calcas } from './abas/calcas';
+import { Tenis } from './abas/tenis';
 
 const router = createBrowserRouter([
 
@@ -23,6 +27,22 @@ const router = createBrowserRouter([
   {
     path: "/user",
     element: <UserPage />
+  },
+  {
+    path: "/camisetas",
+    element: <Camisetas />
+  },
+  {
+    path: "/moletons",
+    element: <Moletons />
+  },
+  {
+    path: "/calcas",
+    element: <Calcas />
+  },
+  {
+    path: "/tenis",
+    element: <Tenis />
   },
 
 ])
