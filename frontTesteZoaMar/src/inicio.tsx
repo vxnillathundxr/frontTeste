@@ -5,7 +5,7 @@ export function Inicio() {
     return(
         <div>
             <Header />   
-            <h1>meu buneco</h1>  
+            <h1>meu buneco alado</h1>  
         </div>
     )
 }
