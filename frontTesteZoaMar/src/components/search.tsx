@@ -48,3 +48,43 @@ const BotaoParaInput: React.FC = () => {
 };
 
 export default BotaoParaInput;
+
+// Cod para que o input de Search localize cada href present no cod :)
+
+// import React from 'react';
+
+// // Lista de URLs
+// const urls = {
+//   home: '/',
+//   about: '/about',
+//   contact: '/contact',
+//   services: '/services',
+//   // Adicione quantos URLs você precisar
+// };
+
+// const App: React.FC = () => {
+//   // Função para redirecionamento
+//   const handleRedirect = (url: string) => {
+//     window.location.href = url;
+//   };
+
+//   return (
+//     <div className="flex items-center justify-center min-h-screen bg-gray-100">
+//       <div className="bg-white p-8 rounded shadow-lg">
+//         <h1 className="text-2xl font-bold mb-4">Escolha um destino:</h1>
+//         {/* Mapeando os URLs e criando um input para cada */}
+//         {Object.entries(urls).map(([key, value]) => (
+//           <input
+//             key={key}
+//             type="button"
+//             value={key}
+//             onClick={() => handleRedirect(value)}
+//             className="cursor-pointer bg-blue-500 text-white font-bold py-2 px-4 rounded mr-2 mb-2 hover:bg-blue-700"
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default App;
