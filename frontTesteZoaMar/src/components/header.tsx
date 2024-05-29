@@ -6,6 +6,7 @@ import ExpandableMenu from './menu'
 
 import cartIcon from '../assets/cartIcon.svg' 
 import userIcon from '../assets/userIcon.svg'
+import { Search, ShoppingCart, UserRound } from 'lucide-react'
 // import menuIcon from '../assets/menuIcon.svg'
 
 export function Header(){
@@ -32,8 +33,8 @@ export function Header(){
                             <BotaoParaInput />
                             {/* <img src={searchIcon}  id="icone" className="size-6"/> */}
                         <nav className="flex gap-4">
-                            <a href='/user'><img src={userIcon}  className="size-6"/></a>
-                            <a href='/cart'><img src={cartIcon}  className="size-6"/></a>
+                            <a className='text-white' href='/user'><UserRound/></a>
+                            <a className='text-white' href='/cart'><ShoppingCart/></a>
                         </nav>
                     </div>
             </div>

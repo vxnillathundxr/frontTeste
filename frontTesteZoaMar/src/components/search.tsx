@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import searchIcon from '../assets/searchIcon.svg'
 import XIcon from '../assets/XIcon.svg'
+import { Search } from "lucide-react";
 
 const BotaoParaInput: React.FC = () => {
   const [mostrarInput, setMostrarInput] = useState<boolean>(false);
@@ -25,7 +25,7 @@ const BotaoParaInput: React.FC = () => {
                 className="flex size-6 text-white rounded transition-opacity duration-300 hover:bg-white-600/10"
                 onClick={handleClick}
               >
-                <img src={searchIcon} alt="searchIcon" />
+                <Search/>
               </button>
             )}
       <div className="flex gap-2 w-full">
