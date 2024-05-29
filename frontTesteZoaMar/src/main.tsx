@@ -9,6 +9,7 @@ import './index.css'
 import { Inicio } from './inicio';
 import { CartPage } from './cart';
 import { UserPage } from './user';
+import { SignIn } from './signin';
 import { Camisetas } from './abas/camisetas';
 import { Moletons } from './abas/moletons';
 import { Calcas } from './abas/calcas';
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/user",
     element: <UserPage />
+  },
+  {
+    path: "/signin",
+    element: <SignIn />
   },
   {
     path: "/camisetas",
