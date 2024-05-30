@@ -13,7 +13,7 @@ const ExpandableMenu: React.FC = () => {
   return (
     <div className="relative">
       <button
-        className=" text-white py-2 px-4 rounded"
+        className=" text-white py-2 rounded"
         onClick={toggleMenu}
       >
              <img src={menuIcon} alt="menuIcon" />

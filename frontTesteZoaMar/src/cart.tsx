@@ -1,5 +1,4 @@
 import { Header } from "./components/header";
-import allStar from './assets/allStarIcon.svg'
 
 export function CartPage(){
     return(

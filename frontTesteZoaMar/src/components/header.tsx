@@ -15,15 +15,24 @@ export function Header(){
             <div className="w-full bg-black h-12 gap-2 p-5 flex flex-row justify-between pb-10">
              {/*div IconMenu e ZoaMar  */}
                 <div className="flex pt-3">
-                    <nav className="flex items-center">
-                        <div className="m-0 p-0">
+                    <nav className="flex gap-2 items-center">
+                        <div className="hidden max-md:block">
                         {/* <BotaoParaMenu /> */}
                         <ExpandableMenu />
                         {/* <a href=""><img src={menuIcon} /></a> */}
                         </div>
-                        <a href={'/'} className="text-white text-2xl pb-1">ZoaMar</a>
+                        <a href={'/'} className="text-white text-2xl pb-1 max-md:mr-10">ZoaMar</a>
                     </nav>
+                    {/* divCertesAbas */}
                 </div>
+                    <div className="hidden md:block">
+                        <nav className="flex gap-20 items-center justify-center mt-3 ml-40 ">
+                            <a className="text-white" href='/camisetas'>Camisetas</a>
+                            <a className="text-white" href='/moletons'>Moletons</a>
+                            <a className="text-white" href='/calcas'>Calças</a>
+                            <a className="text-white" href='/tenis'>Tênis</a>
+                        </nav>
+                    </div>
                 {/* divs left */}
                     <div className="flex gap-5 pb-">
                 {/* div searchIcon */}
