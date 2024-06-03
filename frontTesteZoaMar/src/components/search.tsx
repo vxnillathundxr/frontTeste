@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import XIcon from '../assets/XIcon.svg'
-import { Search } from "lucide-react";
+import { Search, X } from "lucide-react";
 
 const BotaoParaInput: React.FC = () => {
   const [mostrarInput, setMostrarInput] = useState<boolean>(false);
@@ -19,28 +19,31 @@ const BotaoParaInput: React.FC = () => {
   };
 
   return (
-    <div className="  ">
+    <div className="top-4 left-4 ">
+        <div>
             {!mostrarInput && (
               <button
-                className="flex size-6 text-white rounded transition-opacity duration-300 hover:bg-white-600/10"
+                className="flex size-6 text-white rounded transition-opacity duration-300 hover:bg-white-600/10 "
                 onClick={handleClick}
               >
                 <Search/>
               </button>
             )}
-        <div className="flex gap-2 bg-white">
+        </div>
+        <div className="flex gap-2 top-0 bg-white justify-center items-center">
             {mostrarInput && (
               <input 
               type="text"
-              className="w-full border-none outline-none h-12 bg-white text-gray"
+              className=" absolute left-0 pl-6 md:pl-96 top-0 w-[100vw] border-none outline-none h-14 bg-zinc-300"
               value={texto}
               onChange={handleChange}
               onBlur={handleBlur}
-              placeholder="Buscar...">
+              placeholder="Buscar..."
+              >
               </input>
               )}
               {mostrarInput &&(
-           <button className="mr-3 text-black" onClick={handleBlur}><img src={XIcon}/></button>
+           <button className=" text-black absolute right-3 mt-5 md:right-96" onClick={handleBlur}><img src={XIcon}/></button>
            )}
       </div>
      </div>
@@ -48,6 +51,8 @@ const BotaoParaInput: React.FC = () => {
 };
 
 export default BotaoParaInput;
+
+// pl-96 right-96
 
 // Cod para que o input de Search localize cada href present no cod :)
 

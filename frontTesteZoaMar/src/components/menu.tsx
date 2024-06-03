@@ -19,11 +19,19 @@ const ExpandableMenu: React.FC = () => {
              <img src={menuIcon} alt="menuIcon" />
       </button>
       {isOpen && (
-        <div className="absolute mt-2 bg-white p-2 rounded shadow">
-          <a href='/camisetas' className="block py-1">Camisetas</a>
-          <a href='/moletons' className="block py-1">Moletons</a>
-          <a href='/calcas' className="block py-1">Calça</a>
-          <a href='/tenis' className="block py-1">Tênis</a>
+        <div className="flex flex-col absolute mt-2 bg-zinc-300 h-96 w-[100vw] justify-center items-center p-2 gap-8 font-medium text-2xl rounded shadow">
+          <div className='flex w-[110px] border-b border-black justify-center'>
+            <a href='/camisetas' className="block py-1">Camisetas</a>
+          </div>
+          <div className='flex w-[110px] border-b border-black justify-center'>
+            <a href='/moletons' className="block py-1">Moletons</a>
+          </div>
+          <div className='flex w-[110px] border-b border-black justify-center'>
+            <a href='/calcas' className="block py-1">Calças</a>
+          </div>
+          <div className='flex w-[110px] border-b border-black justify-center'>
+            <a href='/tenis' className="block py-1">Tênis</a>
+          </div>
         </div>
       )}
     </div>
