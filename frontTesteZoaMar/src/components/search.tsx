@@ -28,11 +28,11 @@ const BotaoParaInput: React.FC = () => {
                 <Search/>
               </button>
             )}
-      <div className="flex gap-2 w-full">
+      <div className="flex gap-2 bg-white">
             {mostrarInput && (
               <input 
               type="text"
-              className="flex flex-row border-2 w-full bg-transparent rounded text-white "
+              className="w-full border-none outline-none h-12 bg-white text-gray"
               value={texto}
               onChange={handleChange}
               onBlur={handleBlur}
@@ -40,7 +40,7 @@ const BotaoParaInput: React.FC = () => {
               </input>
               )}
               {mostrarInput &&(
-           <button className="" onClick={handleBlur}><img src={XIcon}/></button>
+           <button className="mr-3" onClick={handleBlur}><img src={XIcon}/></button>
            )}
       </div>
      </div>
@@ -48,6 +48,8 @@ const BotaoParaInput: React.FC = () => {
 };
 
 export default BotaoParaInput;
+
+// flex flex-row border-2 w-full bg-transparent rounded text-white 
 
 // Cod para que o input de Search localize cada href present no cod :)
 
