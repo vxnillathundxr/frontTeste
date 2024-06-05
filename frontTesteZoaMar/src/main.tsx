@@ -7,9 +7,9 @@ import {
 
 import './index.css'
 import { Inicio } from './inicio';
-import { CartPage } from './cart';
-import { UserPage } from './user';
-import { SignIn } from './signin';
+import { CartPage } from './abas/cart';
+import { UserPage } from './abas/user';
+import { SignIn } from './abas/signin';
 import { Camisetas } from './abas/camisetas';
 import { Moletons } from './abas/moletons';
 import { Calcas } from './abas/calcas';

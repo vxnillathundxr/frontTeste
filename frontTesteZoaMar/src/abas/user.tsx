@@ -1,4 +1,4 @@
-import { Header } from "./components/header";
+import { Header } from "../components/header";
 import { UserRound } from "lucide-react";
 
 export function UserPage(){
