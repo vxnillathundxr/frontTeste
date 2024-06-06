@@ -23,7 +23,7 @@ const BotaoParaInput: React.FC = () => {
         <div>
             {!mostrarInput && (
               <button
-                className="flex size-6 text-white rounded transition-opacity duration-300 hover:bg-white-600/10 "
+                className="flex size-6 text-white hover:scale-125 duration-200 "
                 onClick={handleClick}
               >
                 <Search/>
