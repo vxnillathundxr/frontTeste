@@ -1,11 +1,12 @@
 import { Header } from "./components/header";
+import { EndH } from "./components/endH"
 
 
 export function Inicio() {
     return(
         <div>
-            <Header />   
-            <h1>meu buneco alado</h1>  
+            <Header />
+            <EndH />
         </div>
     )
 }

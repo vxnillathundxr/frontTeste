@@ -49,7 +49,7 @@ const router = createBrowserRouter([
     path: "/tenis",
     element: <Tenis />
   },
-
+  
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

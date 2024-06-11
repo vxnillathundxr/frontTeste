@@ -1,3 +1,4 @@
+import { EndH } from "../components/endH";
 import { Header } from "../components/header";
 import { UserRound } from "lucide-react";
 
@@ -31,6 +32,7 @@ export function UserPage(){
                     </div>
                 </div>
             </div>
+            <EndH />
         </div>
     )
 }

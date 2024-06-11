@@ -2,6 +2,7 @@ import { CreditCard, Pencil, Receipt} from "lucide-react";
 import blusa from "../assets/blusa.svg"
 import { Header } from "../components/header";
 import pix from "../assets/pix.svg"
+import { EndH } from "../components/endH";
 
 export function CartPage(){
     return(
@@ -73,6 +74,7 @@ export function CartPage(){
                     </div>
                 </div>
             </div>
+            <EndH />
         </div>
     )
 }

@@ -1,3 +1,4 @@
+import { EndH } from "../components/endH"
 import { Header } from "../components/header"
 
 export function SignIn(){
@@ -37,6 +38,7 @@ export function SignIn(){
                     </div>
                 </div>
             </div>
+            <EndH />
         </div>
     )
 

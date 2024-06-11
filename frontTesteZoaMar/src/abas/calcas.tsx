@@ -1,4 +1,5 @@
 import camiseta from '../assets/camiseta.svg'
+import { EndH } from '../components/endH'
 import { Header } from "../components/header"
 
 export function Calcas(){
@@ -9,6 +10,7 @@ export function Calcas(){
             <img src={camiseta} className="size-40"/>
             <h1>Calças</h1>
         </div>
+        <EndH />
     </div>
     )
 }

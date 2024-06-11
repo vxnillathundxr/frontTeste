@@ -2,7 +2,9 @@ import BotaoParaInput from './search'
 import BotaoParaMenu from './menu'
 import ExpandableMenu from './menu'
 import { Search, ShoppingCart, UserRound } from 'lucide-react'
+import faceIcon from "../assets/facebookIcon.svg"
 // import menuIcon from '../assets/menuIcon.svg'
+
 export function Header(){
     return(
             // div principal
