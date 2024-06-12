@@ -1,26 +1,26 @@
-import { CreditCard, Pencil, Receipt} from "lucide-react";
+import { CreditCard, Minus, Plus, Receipt} from "lucide-react";
 import blusa from "../assets/blusa.svg"
 import { Header } from "../components/header";
 import pix from "../assets/pix.svg"
 
 export function CartPage(){
     return(
-        <div>
-            <Header />
-            <div className="flex flex-col w-full h-screen items-center gap-9 justify-center pb-40">
-                <div className="flex w-full items- justify-center h-3/4 gap-10">
-                    <div className="flex flex-col h-full w-[40vw] bg-zinc-300 p-10 rounded gap-16">
+        <div className="flex flex-col w-[100vw] md:gap-1 gap-24">
+            <Header/>
+            <div className="flex flex-col w-[100vw] h-screen items-center gap-9 justify-center pb-40">
+                <div className="flex  flex-col md:flex-row items-center w-[100vw] justify-center h-3/4 gap-10">
+                    <div className="flex flex-col h-full md:w-[40vw] w-[90vw] bg-zinc-300 md:p-10 p-3 rounded md:gap-16 gap-5 left-0">
                         <h1 className="font-bold text-4xl">Carrinho</h1>
-                        <div className="flex flex-col text-3xl font-medium gap-16">
-                            <div className="flex border-b-2 border-black items-center p-3 gap-4">
-                                <img className="size-24" src={blusa}/>
+                        <div className="flex flex-col md:text-3xl text-md font-medium gap-16">
+                            <div className="flex md:w-[42rem] w-[80vw] border-b-2 border-black items-center p-3 gap-4 ">
+                                <img className="md:size-24 size-14" src={blusa}/>
                                 <div className="flex w-full justify-between">
                                     <div className="flex flex-col ">
                                         <a>Moletom Lozango</a>
-                                        <div className="flex gap-6">
-                                            <a>-</a>
+                                        <div className="flex gap-6 items-center">
+                                            <Minus className="bg-black text-white rounded-full"/>
                                             <a>1</a>
-                                            <a className="bg-black text-white rounded-full h-8 w-8 items-center text-center pb-8">+</a>
+                                            <Plus className="bg-black text-white rounded-full"/>
                                         </div>
                                     </div>
                                     <a>R$149,90</a>
@@ -28,20 +28,20 @@ export function CartPage(){
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col h-full w-[40vw] bg-zinc-300 p-10 rounded gap-5">
+                    <div className="flex flex-col h-auto md:w-[40vw] w-[90vw] bg-zinc-300 md:p-10 p-3 rounded gap-5">
                         <h1 className="font-bold text-2xl">Forma de pagamento</h1>
                         <div className="flex flex-col gap-7 items-center">
-                            <div className="flex gap-36 items-center">
+                            <div className="flex md:gap-36 gap-10 items-center justify-center md:w-[30vw] w-[90vw]">
                                 <div className="flex flex-col items-center">
-                                    <img className="size-20 hover:scale-110 duration-200" src={pix} alt="pix" />
+                                    <img className="md:size-20 size-14 hover:scale-110 duration-200 hover:cursor-pointer" src={pix} alt="pix" />
                                     <a className="font-medium">Pix</a>
                                 </div>
                                 <div className="flex flex-col items-center">
-                                    <CreditCard className="size-20 hover:scale-110 duration-200"/>
+                                    <CreditCard className="md:size-20 size-14 hover:scale-110 duration-200 hover:cursor-pointer"/>
                                     <a className="font-medium">Cartão</a>
                                 </div>
                                 <div className="flex flex-col items-center">
-                                    <Receipt className="size-20 hover:scale-110 duration-200"/>
+                                    <Receipt className="md:size-20 size-14 hover:scale-110 duration-200 hover:cursor-pointer"/>
                                     <a className="font-medium">Boleto</a>
                                 </div>
                             </div>
@@ -49,26 +49,26 @@ export function CartPage(){
                         <div className="flex flex-col gap-5 left-0">
                             <h1 className="font-bold text-2xl">Endereço de entrega</h1>
                             <div className="flex flex-col gap-2 text-white">
-                                <div className="flex h-auto w-full">
-                                    <input maxLength={8} className="bg-zinc-500 placeholder:text-white rounded w-[10vw] p-2 max"  placeholder="CEP" type="number" />
+                                <div className="flex h-auto w-full md:justify-normal justify-center">
+                                    <input maxLength={8} className="bg-zinc-500 placeholder:text-white rounded md:w-[10vw] w-[80vw] p-2 max"  placeholder="CEP" type="number" />
                                 </div>
-                                <div className="flex h-auto w-full">
-                                    <input className="bg-zinc-500 placeholder:text-white rounded w-[10vw] p-2"  placeholder="Estado" type="text" />
+                                <div className="flex h-auto w-full md:justify-normal justify-center">
+                                    <input className="bg-zinc-500 placeholder:text-white rounded md:w-[10vw] w-[80vw] p-2"  placeholder="Estado" type="text" />
                                 </div>
-                                <div className="flex h-auto w-full">
-                                    <input className="bg-zinc-500 placeholder:text-white rounded w-[10vw] p-2"  placeholder="Cidade" type="text" />
+                                <div className="flex h-auto w-full md:justify-normal justify-center">
+                                    <input className="bg-zinc-500 placeholder:text-white rounded md:w-[10vw] w-[80vw] p-2"  placeholder="Cidade" type="text" />
                                 </div>
-                                <div className="flex h-auto w-full gap-1">
-                                    <input className="bg-zinc-500 placeholder:text-white rounded w-[25vw] p-2"  placeholder="Rua" type="text" />
-                                    <input className="bg-zinc-500 placeholder:text-white rounded p-2 w-[5vw]" placeholder="N°" type="number" />
+                                <div className="flex md:flex-row flex-col pl-1 h-auto w-full md:justify-normal justify-center md:gap-1 gap-2">
+                                    <input className="bg-zinc-500 placeholder:text-white rounded md:w-[25vw] w-[80vw] p-2"  placeholder="Rua" type="text" />
+                                    <input className="bg-zinc-500 placeholder:text-white rounded p-2 md:w-[5vw] w-[30vw]" placeholder="N°" type="number" />
                                 </div>
-                                <div className="flex h-auto w-full">
-                                    <input className="bg-zinc-500 placeholder:text-white rounded w-96 p-2"  placeholder="Complemento" type="text" />
+                                <div className="flex h-auto w-full md:justify-normal justify-center">
+                                    <input className="bg-zinc-500 placeholder:text-white rounded md:w-96 w-[80vw] p-2"  placeholder="Complemento" type="text" />
                                 </div>
                             </div>
                         </div>
-                        <div className="flex center w-full">
-                            <button className="bg-black rounded text-white w-[10vw] h-11 hover:scale-105 duration-200">Finalizar Compra</button>
+                        <div className="flex justify-center w-full">
+                            <button className="bg-black rounded text-white md:w-[10vw] w-[50vw] h-11 hover:scale-105 duration-200">Finalizar Compra</button>
                         </div>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ import { Search, ShoppingCart, UserRound } from 'lucide-react'
 export function Header(){
     return(
             // div principal
-            <div className="w-full bg-black h-14">
+            <div className="w-[100vw] bg-black h-14">
                 <div className="gap-2 md:px-5 pr-3 flex justify-between py-0 items-center">
             {/*div IconMenu e ZoaMar  */}
                     <div className="flex pt-3 ">
