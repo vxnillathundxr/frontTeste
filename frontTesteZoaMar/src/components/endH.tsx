@@ -5,26 +5,27 @@ import twIcon from "../assets/twitterIcon.svg"
 export function EndH(){
     return(
             <div className="bg-black h-80 w-full mt-[1000px]">
-                <div className="md:flex items-center text-white justify-center md:gap-5 md:ml-16 md:space-x-36 space-y-10 pt-2">
+                <div className="md:flex items-center text-white justify-center md:gap-6 md:space-x-28 space-y-10 pt-2 md:mr-4">
                 {/*<div className="flex items-center text-white gap-5 ml-16 space-x-36"> */}
-                    <div className="flex-col items-center md:mt-40 md:text-2xl justify-center pt-10 ">
+                    {/* <div className="flex-col items-center md:mt-40 md:text-2xl justify-center pt-10 mb-10"> */}
+                    <div className="flex-col items-center md:mt-12 md:text-2xl justify-center pt-10 md:pt-20 md:flex">
                     {/* <div className="flex-col items-center mt-40 text-2xl"> */}
-                        <h2 className="sm:flex sm:items-center sm:justify-center">RECEBA NOVIDADES E GANHE</h2>
-                        <h2 className="sm:flex sm:items-center sm:justify-center">10% OFF NA PRIMEIRA COMPRA.</h2>
+                        <h2 className="flex items-center justify-center">RECEBA NOVIDADES E GANHE</h2>
+                        <h2 className="flex items-center justify-center">10% OFF NA PRIMEIRA COMPRA.</h2>
                     </div>
                     <div className="flex md:gap-4 gap-1 md:mt-36 m-2">
                         <input 
                         type="text" 
                         placeholder="Seu melhor email"
-                        className="border border-white md:p-3 p-1 w-96 bg-transparent rounded">
+                        className="border border-white md:p-3 p-1 w-96 md:mt-20 bg-transparent rounded">
                         </input>
                         <button 
-                        className="bg-white text-black p-1 border rounded"
+                        className="bg-white text-black p-1 border rounded md:mt-20"
                         >Assinar</button>
                     </div>
-                    <div className="flex-col gap-5 space-y-4 mt-32">
-                        <h3 className="text-white flex items-center justify-center">Siga nas redes sociais:</h3>
-                            <div className="flex gap-5 md:ml-6 items-center justify-center">
+                    <div className="flex-col gap-5 space-y-4">
+                        <h3 className="text-white flex items-center justify-center md:mt-16">Siga nas redes sociais:</h3>
+                            <div className="flex gap-5 items-center justify-center ">
                                 <a href='https://www.instagram.com/?utm_source=pwa_homescreen&__pwa=1'
                                 target="_blank">
                                 <img src={instagramIcon} alt="InstaIcon" >
