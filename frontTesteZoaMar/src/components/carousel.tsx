@@ -55,7 +55,7 @@ const Carousel: React.FC<CarouselProps> = ({
               key={i}
               className={`
                 transition-all w-3 h-3 bg-white rounded-full
-                ${curr === i ? "p-2" : "bg-opacity-50"}
+                ${curr === i ? "p-1 md:p-2" : "bg-opacity-50"}
               `}
             />
           ))}

@@ -2,17 +2,19 @@ import { Header } from "./components/header";
 import { EndH } from "./components/endH"
 import Carousel from './components/carousel';
 
+// Tamanho da imagens para caber no Carousel 80x30cm
 const images = [
-    'https://help.autodesk.com/sfdcarticles/img/0EM3g000002uMgs',
-    'https://i.pinimg.com/564x/b3/a4/f0/b3a4f0f172f8be1e5ec6d24f5110ef4a.jpg',
-    'https://presaviva.com.br/wp-content/uploads/2023/05/Poses_Camuflado_07.jpg'
+    'https://i.im.ge/2024/06/13/K8Q69L.Novo-Projeto-2.jpeg',
+    'https://i.im.ge/2024/06/13/K8QxqS.Novo-Projeto.jpeg',
+    'https://i.im.ge/2024/06/13/K8QYk6.Novo-Projeto-2.jpeg',
+    'https://i.im.ge/2024/06/13/K8QcFF.Novo-Projeto-1.jpeg',
 ]
 
 export function Inicio() {
     return(
         <div>
             <Header />
-            <div className="w-full">
+            <div className="w-[100vw]">
                 <Carousel>
                     {images.map((s) => (
                         <img src={s} />
