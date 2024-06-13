@@ -23,77 +23,76 @@ export function Inicio() {
                 </Carousel>    
             </div>
             {/* Img-https://i.im.ge/2024/06/14/K874SF.imagem-2024-06-13-153411570.png */}
-            <div className="-space-y-36 bg-custom-image">
-                <div className="flex p-28 gap-24">
+            {/* <div className="-space-y-36 bg-white">
+                <div className="flex p-28 gap-24"> */}
+            <div className="md:-space-y-36 space-y-0.5 bg-white">
+                <div className="flex flex-col md:flex-row p-10 md:p-28 space-y-8 md:gap-24">
                     <CardProduto
                     image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                    title="DO GIGANTE"
+                    title="Camisa VASCO - Oficial"
                     price="R$1000,00"    
                     />
                     <CardProduto
                     image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                    title="DO GIGANTE"
+                    title="Camisa VASCO - Oficial"
                     price="R$1000,00"    
                     />
                     <CardProduto
                     image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                    title="DO GIGANTE"
+                    title="Camisa VASCO - Oficial"
                     price="R$1000,00"    
                     />
                     <CardProduto
                     image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                    title="DO GIGANTE"
-                    price="R$1000,00"    
-                    />
-                </div>
-                <div className="flex p-28 gap-24">
-                    <CardProduto
-                    image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                    title="DO GIGANTE"
-                    price="R$1000,00"    
-                    />
-                    <CardProduto
-                    image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                    title="DO GIGANTE"
-                    price="R$1000,00"    
-                    />
-                    <CardProduto
-                    image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                    title="DO GIGANTE"
-                    price="R$1000,00"    
-                    />
-                    <CardProduto
-                    image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                    title="DO GIGANTE"
+                    title="Camisa VASCO - Oficial"
                     price="R$1000,00"    
                     />
                 </div>
-                <div className="flex p-28 gap-24">
+                <div className="flex flex-col md:flex-row p-10 md:p-28 space-y-8 md:gap-24">
                     <CardProduto
-                    image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                    title="DO GIGANTE"
+                    image="https://dcdn.mitiendanube.com/stores/002/975/032/products/calca-cargo-masculina-modelo-urban-preta111-a4cacd28c26da18b5516820081376075-640-0.webp"
+                    title="Calça cargo - Preta"
                     price="R$1000,00"    
                     />
                     <CardProduto
-                    image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                    title="DO GIGANTE"
+                    image="https://dcdn.mitiendanube.com/stores/002/975/032/products/calca-cargo-masculina-modelo-urban-preta111-a4cacd28c26da18b5516820081376075-640-0.webp"
+                    title="Calça cargo - Preta"
                     price="R$1000,00"    
                     />
                     <CardProduto
-                    image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                    title="DO GIGANTE"
+                    image="https://dcdn.mitiendanube.com/stores/002/975/032/products/calca-cargo-masculina-modelo-urban-preta111-a4cacd28c26da18b5516820081376075-640-0.webp"
+                    title="Calça cargo - Preta"
                     price="R$1000,00"    
                     />
                     <CardProduto
-                    image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                    title="DO GIGANTE"
+                    image="https://dcdn.mitiendanube.com/stores/002/975/032/products/calca-cargo-masculina-modelo-urban-preta111-a4cacd28c26da18b5516820081376075-640-0.webp"
+                    title="Calça cargo - Preta"
                     price="R$1000,00"    
                     />
                 </div>
-
-
+                <div className="flex flex-col md:flex-row p-10 md:p-28 space-y-8 md:gap-24  ">
+                    <CardProduto
+                    image="https://static.rockcity.com.br/public/rockcity/imagens/produtos/tenis-nike-sb-chron-2-preto-branco-97523.jpg"
+                    title="Tênis Nike SB - Preto"
+                    price="R$1000,00"    
+                    />
+                    <CardProduto
+                    image="https://static.rockcity.com.br/public/rockcity/imagens/produtos/tenis-nike-sb-chron-2-preto-branco-97523.jpg"
+                    title="Tênis Nike SB - Preto"
+                    price="R$1000,00"    
+                    />
+                    <CardProduto
+                    image="https://static.rockcity.com.br/public/rockcity/imagens/produtos/tenis-nike-sb-chron-2-preto-branco-97523.jpg"
+                    title="Tênis Nike SB - Preto"
+                    price="R$1000,00"    
+                    />
+                    <CardProduto
+                    image="https://static.rockcity.com.br/public/rockcity/imagens/produtos/tenis-nike-sb-chron-2-preto-branco-97523.jpg"
+                    title="Tênis Nike SB - Preto"
+                    price="R$1000,00"    
+                    />
+                </div>
             </div>
-
             <EndH />
         </div>
     )
