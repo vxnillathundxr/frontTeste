@@ -14,10 +14,10 @@ export function Inicio() {
     return(
         <div>
             <Header />
-            <div className="w-[100vw]">
+            <div className="md:w-[100vw]">
                 <Carousel>
                     {images.map((s) => (
-                        <img src={s} />
+                        <img className="md:h-[80vh] h-64" src={s} />
                     ))}
                 </Carousel>
 
