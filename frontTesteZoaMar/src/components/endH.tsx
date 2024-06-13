@@ -4,7 +4,7 @@ import twIcon from "../assets/twitterIcon.svg"
 
 export function EndH(){
     return(
-            <div className="bg-black h-80 w-full mt-[1000px]">
+            <div className="bg-black h-80 w-full mt-[3px]">
                 <div className="md:flex items-center text-white justify-center md:gap-6 md:space-x-28 space-y-10 pt-2 md:mr-4">
                 {/*<div className="flex items-center text-white gap-5 ml-16 space-x-36"> */}
                     {/* <div className="flex-col items-center md:mt-40 md:text-2xl justify-center pt-10 mb-10"> */}
