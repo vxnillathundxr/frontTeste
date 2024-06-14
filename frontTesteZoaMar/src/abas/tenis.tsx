@@ -7,8 +7,9 @@ export function Tenis(){
     return(
         <div>
             <Header />
-                <div className="md:-space-y-36 space-y-0.5 bg-white">
-                    <div className="flex flex-col md:flex-row p-10 md:p-28 space-y-8 md:gap-24  ">
+                <div className="flex flex-col bg-white">
+                <h1 className='text-5xl font-bold p-10'>Calças</h1>
+                    <div className="flex flex-col md:flex-row p-10 md:p-16 md:gap-24 items-center justify-center">
                         <CardProduto
                         image="https://static.rockcity.com.br/public/rockcity/imagens/produtos/tenis-nike-sb-chron-2-preto-branco-97523.jpg"
                         title="Tênis Nike SB - Preto"

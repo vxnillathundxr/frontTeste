@@ -7,8 +7,9 @@ export function Camisetas(){
     return(
         <div>
         <Header />
-            <div className="md:-space-y-36 space-y-0.5 bg-white">
-                <div className="flex flex-col md:flex-row p-10 md:p-28 space-y-8 md:gap-24">
+            <div className="flex flex-col bg-white">
+                <h1 className='text-5xl font-bold p-10'>Camisetas</h1>
+                <div className="flex flex-col md:flex-row p-10 md:p-16 md:gap-24 items-center justify-center">
                     <CardProduto
                     image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
                     title="Camisa VASCO - Oficial"

@@ -11,7 +11,7 @@ const ExpandableMenu: React.FC = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative z-999">
       <button
         className=" text-white py-2 px-4 rounded"
         onClick={toggleMenu}

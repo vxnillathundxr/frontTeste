@@ -7,8 +7,9 @@ export function Calcas(){
     return(
         <div>
         <Header />
-            <div className="md:-space-y-36 space-y-0.5 bg-white">
-                <div className="flex flex-col md:flex-row p-10 md:p-28 space-y-8 md:gap-24">
+            <div className="flex flex-col bg-white">
+                <h1 className='text-5xl font-bold p-10'>Calças</h1>
+                <div className="flex flex-col md:flex-row p-10 md:p-16 md:gap-24 items-center justify-center">
                     <CardProduto
                     image="https://dcdn.mitiendanube.com/stores/002/975/032/products/calca-cargo-masculina-modelo-urban-preta111-a4cacd28c26da18b5516820081376075-640-0.webp"
                     title="Calça cargo - Preta"

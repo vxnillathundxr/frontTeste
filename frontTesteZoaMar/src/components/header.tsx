@@ -21,7 +21,7 @@ export function Header(){
                         </nav>
                         {/* divCertesAbas */}
                     </div>
-                    <div className="hidden md:block">
+                    <div className="hidden md:block z-999">
                         <nav className="flex gap-20 items-center justify-center mt-7">
                             <a className="text-white hover:scale-105 duration-100" href='/camisetas'>Camisetas</a>
                             <a className="text-white hover:scale-105 duration-100" href='/moletons'>Moletons</a>
@@ -31,7 +31,7 @@ export function Header(){
                     </div>
                         {/* divs left */}   
                     <div className="flex gap-5">
-                        <nav className="flex gap-4 mt-3">
+                        <nav className="flex gap-4 mt-3 z-999">
                             <BotaoParaInput/> 
                             <a className='text-white hover:scale-125 duration-200' href='/user'><UserRound/></a>
                             <a className='text-white hover:scale-125 duration-200' href='/cart'><ShoppingCart/></a>
