@@ -2,13 +2,14 @@ import { Header } from "./components/header";
 import { EndH } from "./components/endH"
 import Carousel from './components/carousel';
 import CardProduto from "./components/cardProduto";
+import cardCamisa from "./assets/Camisas.png"
 
 // Tamanho da imagens para caber no Carousel 80x30cm
 const images = [
-    'https://i.im.ge/2024/06/13/K8Q69L.Novo-Projeto-2.jpeg',
-    'https://i.im.ge/2024/06/13/K8QxqS.Novo-Projeto.jpeg',
+    'https://i.im.ge/2024/06/18/KfecRD.Camisas-1.png',
+    'https://i.im.ge/2024/06/18/KkXQGz.Moletom.png',
     'https://i.im.ge/2024/06/13/K8QYk6.Novo-Projeto-2.jpeg',
-    'https://i.im.ge/2024/06/13/K8QcFF.Novo-Projeto-1.jpeg',
+    'https://i.im.ge/2024/06/18/Kko3aC.Tenis.png',
 ]
 
 export function Inicio() {
