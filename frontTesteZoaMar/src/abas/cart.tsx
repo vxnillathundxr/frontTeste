@@ -6,7 +6,7 @@ import { EndH } from "../components/endH";
 
 export function CartPage(){
     return(
-        <div className="flex flex-col w-[100vw] md:gap-1 gap-24">
+        <div >
             <Header/>
             <div className="flex flex-col w-[100vw] h-screen items-center gap-9 justify-center pb-40">
                 <div className="flex  flex-col md:flex-row items-center w-[100vw] justify-center h-3/4 gap-10">

@@ -2,13 +2,12 @@ import { Header } from "./components/header";
 import { EndH } from "./components/endH"
 import Carousel from './components/carousel';
 import CardProduto from "./components/cardProduto";
-import cardCamisa from "./assets/Camisas.png"
 
 // Tamanho da imagens para caber no Carousel 80x30cm
 const images = [
     'https://i.im.ge/2024/06/18/KfecRD.Camisas-1.png',
     'https://i.im.ge/2024/06/18/KkXQGz.Moletom.png',
-    'https://i.im.ge/2024/06/13/K8QYk6.Novo-Projeto-2.jpeg',
+    'https://i.im.ge/2024/06/18/KkynB1.calcas.png',
     'https://i.im.ge/2024/06/18/Kko3aC.Tenis.png',
 ]
 
@@ -19,7 +18,7 @@ export function Inicio() {
             <div className="md:w-[100vw] relative">
                 <Carousel>  
                     {images.map((s) => (
-                        <img className="md:h-[80vh] h-[60vh]" src={s} />
+                        <img className="md:h-[80vh] h-[20vh]" src={s} />
                     ))}
                 </Carousel>    
             </div>
