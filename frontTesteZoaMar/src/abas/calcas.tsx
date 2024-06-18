@@ -1,4 +1,3 @@
-import camiseta from '../assets/camiseta.svg'
 import { EndH } from '../components/endH'
 import { Header } from "../components/header"
 import CardProduto from "../components/cardProduto";
