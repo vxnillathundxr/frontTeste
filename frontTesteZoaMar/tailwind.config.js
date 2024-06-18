@@ -8,6 +8,10 @@ export default {
     extend: {
       backgroundImage: {
         'custom-image': "url('https://i.im.ge/2024/06/14/K874SF.imagem-2024-06-13-153411570.png')",
+      
+      fontFamily: {
+        'ns': ['Noto Serif', 'serif'],
+      }
       },
       zIndex: {
         '999': '999',

@@ -17,11 +17,11 @@ export function Header(){
                             {/* <BotaoParaMenu /> */}
                             <ExpandableMenu />
                             </div>
-                            <a href={'/'} className="text-white text-2xl">ZoaMar</a>
+                            <a href={'/'} className="text-white font-ns text-3xl md:text-4xl">ZoaMar</a>
                         </nav>
                         {/* divCertesAbas */}
                     </div>
-                    <div className="hidden md:block z-999">
+                    <div className="hidden md:block z-999 mr-20">
                         <nav className="flex gap-20 items-center justify-center mt-7">
                             <a className="text-white hover:scale-105 duration-100" href='/camisetas'>Camisetas</a>
                             <a className="text-white hover:scale-105 duration-100" href='/moletons'>Moletons</a>
