@@ -43,11 +43,18 @@ export function SignIn(){
         // console.log(passwordRef.current?.value)
         
     }
-        async function handleDelete(id: string){
-            alert(id);
-
-
-        }
+        // async function handleDelete(id: string){
+        //     try{
+        //         await api.delete('/logins',{
+        //             params:{
+        //                 id: id,
+        //             }
+        //         })
+        //     }catch(err){
+        //         console.log(err);
+        //     }
+        //     // alert(id);
+        // }
 
 
 
@@ -96,7 +103,7 @@ export function SignIn(){
                         </div>
                     </form>
                             
-                        {customers.map((customer) => (
+                        {/* {customers.map((customer) => (
                             <article
                             key={customer.id}
                             >
@@ -107,7 +114,7 @@ export function SignIn(){
 
                                 </button>
                             </article>
-                        ))}
+                        ))} */}
                     <div className="flex flex-col gap-32 items-center">
                         <div className="flex gap-2">
                             <a>Já tem conta? </a>

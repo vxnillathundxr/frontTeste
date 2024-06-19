@@ -1,6 +1,7 @@
 import instagramIcon from "../assets/instagramIcon.svg"
 import faceIcon from "../assets/facebookIcon.svg"
 import twIcon from "../assets/twitterIcon.svg"
+import EmailForm from "./emailForm"
 
 export function EndH(){
     return(
@@ -13,7 +14,10 @@ export function EndH(){
                         <h2 className="flex items-center justify-center">RECEBA NOVIDADES E GANHE</h2>
                         <h2 className="flex items-center justify-center">10% OFF NA PRIMEIRA COMPRA.</h2>
                     </div>
-                    <div className="flex md:gap-4 gap-1 md:mt-36 m-2">
+                        <EmailForm />
+              
+                    
+                    {/* <div className="flex md:gap-4 gap-1 md:mt-36 m-2">
                         <input 
                         type="text" 
                         placeholder="Seu melhor email"
@@ -22,7 +26,7 @@ export function EndH(){
                         <button 
                         className="bg-white text-black p-1 border rounded md:mt-20"
                         >Assinar</button>
-                    </div>
+                    </div> */}
                     <div className="flex-col gap-5 space-y-4">
                         <h3 className="text-white flex items-center justify-center md:mt-16">Siga nas redes sociais:</h3>
                             <div className="flex gap-5 items-center justify-center ">
