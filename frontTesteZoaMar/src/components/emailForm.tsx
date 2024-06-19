@@ -35,10 +35,6 @@ const EmailForm: React.FC = () => {
     <form onSubmit={handleSubmit} 
     className="flex md:gap-4 gap-1 md:mt-36 m-2"
     >
-      {/* <div className="mb-4"> */}
-        {/* <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-          Email
-        </label> */}
         <input
           type="email"
           id="email"
@@ -48,8 +44,7 @@ const EmailForm: React.FC = () => {
           className="border border-white md:p-3 p-1 w-96 md:mt-20 bg-transparent rounded"
           required
         />
-      {/* </div> */}
-      <div className="mb-4">
+      {/* <div className="mb-4">
         <textarea
           id="message"
           value={message}
@@ -57,10 +52,8 @@ const EmailForm: React.FC = () => {
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           required
         ></textarea>
-      </div>
-      <div 
-    //   className="flex items-center justify-between"
-      >
+      </div> */}
+      <div>
         <button
           type="submit"
           className="bg-white text-black p-3 border rounded md:mt-20"

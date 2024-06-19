@@ -8,7 +8,7 @@ import {
 import './index.css'
 import { Inicio } from './inicio';
 import { CartPage } from './abas/cart';
-import { UserPage } from './abas/user';
+import { UserLogin } from './abas/user';
 import { SignIn } from './abas/signin';
 import { Camisetas } from './abas/camisetas';
 import { Moletons } from './abas/moletons';
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/user",
-    element: <UserPage />
+    element: <UserLogin />
   },
   {
     path: "/signin",
@@ -49,11 +49,6 @@ const router = createBrowserRouter([
     path: "/tenis",
     element: <Tenis />
   },
-  {
-    path: "/userPage",
-    element: <UserPage />
-  }
-  
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
