@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { PagLogado } from './pagLogado';
@@ -6,27 +6,40 @@ import { EndH } from "../components/endH";
 import { Header } from "../components/header";
 import { useNavigate } from 'react-router-dom';
 import { UserRound } from "lucide-react";
+import { api } from '../services/api';
 
 
-export const UserLogin: React.FC = () => {
+export const UserLogin = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    // const [AdminTF, setAdminTF] = useState('');
     // const [id, setId ] = useState('');
     const navigate = useNavigate();
   
     const handleSubmit = async (event: React.FormEvent) => {
       event.preventDefault();
       try {
-        const response = await axios.get('/logins');
-        if (response.status === 200) {
-          navigate('/protected');
-        
+        const response = await api.post('/login',
+        {
+        email: email, 
+        password: password
+    }, {
+            headers:{
+                'Content-Type': 'application/json'
+            }
         }
+        );
+        if (!response.data) return;
+        localStorage.setItem("token",response.data.accessToken)
+          navigate('/pagLogado');
       } catch (error) {
         alert('Invalid email or password');
       }
     };
+    // const handleClick = () => {
+    //     handleSubmit(); 
+    //   };
 
     return(
         <div>
@@ -80,12 +93,12 @@ export const UserLogin: React.FC = () => {
                     </div>
                 </div>
             </form>
-             <Routes>
-                <Route path="/protected" element={<PagLogado />} />
-                  {/* <Route path="/" element={<UserLogin />} />
+             {/* <Routes>
+                <Route path="/pagLogado" element={<PagLogado />} />
+                  <Route path="/" element={<UserLogin />} />
       <Route path="/protected" element={<PagLogado />} />
-      <Route path="*" element={<Navigate to="/" />} /> */}
-            </Routes>
+      <Route path="*" element={<Navigate to="/" />} />
+            </Routes> */}
         </div>
             <EndH />
         </div>

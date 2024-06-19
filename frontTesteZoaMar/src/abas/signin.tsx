@@ -32,10 +32,13 @@ export function SignIn(){
 
         if(!emailRef.current?.value || !passwordRef.current?.value) return;
 
-        const response = await api.post("/login", {
+        const response = await api.post("/postLogin", {
             email: emailRef.current?.value,
-            password: passwordRef.current?.value
+            password: passwordRef.current?.value,
+            isAdmin: false
         })
+        console.log(response.data)
+
         // setCustomers(allCustomers => [...allCustomers, response.data])
         // console.log(response.data);
 
@@ -94,7 +97,7 @@ export function SignIn(){
                                 <input
                                 type="submit"
                                 value="Cadastrar"
-                                className="flex bg-black text-white p-2 rounded w-24 h-10 items-center justify-center"
+                                className="flex bg-black text-white p-2 rounded w-24 h-10 items-center justify-center cursor-pointer hover:scale-110 duration-100"
                                 />
                             </div>
                             {/* <div className="flex h-auto w-full justify-center p-5">
