@@ -1,6 +1,6 @@
-import CardAdd from '../components/cardAdd'
-import CardRemove from '../components/cardRemove'
-import CardUpdate from '../components/cardUpdate'
+import CardAdd from '../components/cards/cardAdd'
+import CardRemove from '../components/cards/cardRemove'
+import CardUpdate from '../components/cards/cardUpdate'
 import { EndH } from '../components/endH'
 import { Header } from '../components/header'
 
@@ -10,21 +10,14 @@ export function AdmPage(){
             <Header/>
             <div className='flex-wrap flex gap-8 items-center justify-center'>
                 <div>
-                    <CardAdd
-                    title="Adicionar um Item"
-                    button="Adicionar Item"
-                    name="Nome do Produto"
-                    price="Preço"
-                    stock="Quantidade de Estoque"
-                    departament="Departamento"
-                    tag="Tag"
-                    />
+                    <CardAdd/>
                 </div>
                 <div>
                     <CardRemove
                     title="Remover um Item"
                     searchID="ID do produto"
                     searchTag="Tag do produto"
+                    // Interessante o remove, sei como fazer
                     remove="Remover produto"
                     />
                 </div>

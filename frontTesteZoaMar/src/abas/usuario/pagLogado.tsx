@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Header } from '../components/header';
-import { EndH } from '../components/endH';
-import { api } from '../services/api';
+import { Header } from '../../components/header';
+import { EndH } from '../../components/endH';
+import { api } from '../../services/api';
 
 interface CustomerProps {
   id: string;
@@ -19,7 +19,7 @@ export const PagLogado = () => {
 
   async function loadCustomers() {
     try {
-      const response = await api.post("/login");  
+      const response = await api.post('/login');  
       setCustomers(response.data);
     } catch (error) {
       console.error("Erro ao carregar os clientes", error);

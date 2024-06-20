@@ -1,6 +1,6 @@
-import { EndH } from '../components/endH';
-import { Header } from "../components/header";
-import CardProduto from "../components/cardProduto";
+import { EndH } from '../../components/endH';
+import { Header } from "../../components/header";
+import CardProduto from "../../components/cards/cardProduto";
 
 export function Moletons(){
     return(

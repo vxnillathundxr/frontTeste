@@ -1,7 +1,7 @@
 import { Header } from "./components/header";
 import { EndH } from "./components/endH"
 import Carousel from './components/carousel';
-import CardProduto from "./components/cardProduto";
+import CardProduto from "./components/cards/cardProduto";
 
 // Tamanho da imagens para caber no Carousel 80x30cm
 const images = [
