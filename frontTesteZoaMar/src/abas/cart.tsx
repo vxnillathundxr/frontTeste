@@ -1,4 +1,4 @@
-import { CreditCard, Minus, Plus, Receipt} from "lucide-react";
+import { CreditCard, Receipt} from "lucide-react";
 import blusa from "../assets/blusa.svg"
 import { Header } from "../components/header";
 import pix from "../assets/pix.svg"
@@ -20,9 +20,7 @@ export function CartPage(){
                                         <div className="flex flex-col ">
                                             <a>Moletom Lozango</a>
                                             <div className="flex gap-6 items-center">
-                                                <Minus className="bg-black text-white rounded-full"/>
-                                                <a>1</a>
-                                                <Plus className="bg-black text-white rounded-full"/>
+                                                <a><input type="number" className="bg-zinc-300 placeholder:text-white rounded p-2 md:w-[5vw] w-[30vw] outline-none" placeholder="N°"/></a>
                                             </div>
                                         </div>
                                         <a>R$149,90</a>
