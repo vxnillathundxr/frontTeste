@@ -24,11 +24,22 @@ export function CardAdd(){
     const colorRef = useRef<HTMLInputElement | null>(null)
     const imageRef = useRef<HTMLInputElement | null>(null)
 
+    useEffect(() => {
+        const loadProducts = async () => {
+            try {
+                const response = await api.get("/produtos");
+                setProdutos(response.data);
+            } catch (error) {
+                console.error("Erro ao carregar produtos:", error);
+            }
+        };
+        loadProducts();
+    }, []);
     // useEffect(() => {
-    //     loadCustomers();
+    //     loadproducts();
     // }, [])
 
-    // async function loadCustomers() {
+    // async function loadproducts() {
     //     const response = await api.get("/produtos")        
     //     setProdutos(response.data);
     //     // console.log(response.data)
@@ -119,22 +130,25 @@ export function CardAdd(){
                 {/* <button className='hover:bg-zinc-500 hover:text-black hover:ease-linear ease-linear rounded-lg bg-black font-bold text-xl text-white p-1 mb-2' onClick={handleSubmit}>{button}</button> */}
             </div>
 
-            <section>
-                {produtos.map( (produto) => (
-                    <article>
-                        key={produto.id}
+            <section className="flex ">
+                {Array.isArray(produtos) &&  produtos.map( (produto) => (
+                    <article
+                    key={produto.id}
+                    >
                     <div className='bg-zinc-300 md:w-60 w-[45vw] rounded-lg overflow-hidden shadow-lg items-center '>
                         <div className='flex flex-col gap-5 px-3 py-3'>
-                            {/* Arrumar dps */}
-                        {/* <img className='flex rounded' src={produto.imagem} alt={produto.name} /> */}
+                            <p><span className="md:text-3xl text-base font-bold">Nome:</span>{produto.name}</p>
+                            <p><span className="flex flex-col gap-3 text-bold md:text-2xl">Preço:</span>{produto.price}</p>
+                            <p><span className="flex flex-col gap-3 text-bold md:text-2xl">Color</span>{produto.color}</p>
+                        {/* <img className='flex rounded' src={produto.image} alt={produto.name} />
                         <div className='flex flex-col gap-3'>
                         <h1 className='md:text-3xl text-base font-bold'>{produto.name}</h1>
-                            <div className='flex flex-col gap-3 text-bold md:text-2xl'>{produto.price}</div>
+                            <div className='flex flex-col gap-3 text-bold md:text-2xl'>{produto.price}</div> */}
                             <button className='hover:bg-zinc-500 hover:text-black duration-200  rounded-lg bg-black font-bold text-xl text-white p-1 mb-2'>Ver Mais
                             </button>
                         </div>
                         </div>
-                    </div>
+                    {/* </div> */}
                 </article>
                 ))}
             </section>
