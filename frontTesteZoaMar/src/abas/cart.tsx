@@ -1,8 +1,8 @@
 import { CreditCard, Receipt} from "lucide-react";
-import blusa from "../assets/blusa.svg"
 import { Header } from "../components/header";
 import pix from "../assets/pix.svg"
 import { EndH } from "../components/endH";
+import CartComponent from "../components/cartComponent";
 
 export function CartPage(){
     return(
@@ -13,20 +13,11 @@ export function CartPage(){
                     <div className="flex  flex-col md:flex-row items-center w-[100vw] justify-center h-3/4 gap-10">
                         <div className="flex flex-col h-full md:w-[40vw] w-[90vw] bg-zinc-300 md:p-10 p-3 rounded md:gap-16 gap-5 left-0">
                             <h1 className="font-bold text-4xl">Carrinho</h1>
-                            <div className="flex flex-col md:text-3xl text-md font-medium gap-16">
-                                <div className="flex md:w-[42rem] w-[80vw] border-b-2 border-black items-center p-3 gap-4 ">
-                                    <img className="md:size-24 size-14" src={blusa}/>
-                                    <div className="flex w-full justify-between">
-                                        <div className="flex flex-col ">
-                                            <a>Moletom Lozango</a>
-                                            <div className="flex gap-6 items-center">
-                                                <a><input type="number" className="bg-zinc-300 placeholder:text-white rounded p-2 md:w-[5vw] w-[30vw] outline-none" placeholder="N°"/></a>
-                                            </div>
-                                        </div>
-                                        <a>R$149,90</a>
-                                    </div>
-                                </div>
-                            </div>
+                            <CartComponent
+                            title="Moletom Lozango"
+                            price="R$149,90"
+                            image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            />
                         </div>
                         <div className="flex flex-col h-auto md:w-[40vw] w-[90vw] bg-zinc-300 md:p-10 p-3 rounded gap-5">
                             <h1 className="font-bold text-2xl">Forma de pagamento</h1>

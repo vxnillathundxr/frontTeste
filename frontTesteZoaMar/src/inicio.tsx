@@ -5,10 +5,10 @@ import CardProduto from "./components/cardProduto";
 
 // Tamanho da imagens para caber no Carousel 80x30cm
 const images = [
-    'https://i.im.ge/2024/06/18/KfecRD.Camisas-1.png',
-    'https://i.im.ge/2024/06/18/KkXQGz.Moletom.png',
-    'https://i.im.ge/2024/06/18/KkynB1.calcas.png',
-    'https://i.im.ge/2024/06/18/Kko3aC.Tenis.png',
+    'https://i.im.ge/2024/06/20/KHDpSP.Camisas-1-.jpeg',
+    'https://i.im.ge/2024/06/20/KHD4rm.Moletom.jpeg',
+    'https://i.im.ge/2024/06/20/KHIMM0.calcas.jpeg',
+    'https://i.im.ge/2024/06/20/KHIQIT.Tenis.jpeg',
 ]
 
 export function Inicio() {
