@@ -1,7 +1,7 @@
 import { Header } from "./components/header";
 import { EndH } from "./components/endH"
 import Carousel from './components/carousel';
-import CardProduto from "./components/cardProduto";
+import CardProduto from "./components/cards/cardProduto";
 
 // Tamanho da imagens para caber no Carousel 80x30cm
 const images = [
@@ -17,8 +17,13 @@ export function Inicio() {
             <Header />
             <div className="md:w-[100vw] relative">
                 <Carousel>  
-                    {images.map((s) => (
+                    {/* {images.map((s, index) => (
+                        <div key={index}>
+                            <img className="md:h-[80vh] h-[20vh]" src={s} />
+                        </div> */}
+                        {images.map((s) => (
                         <img className="md:h-[80vh] h-[20vh]" src={s} />
+
                     ))}
                 </Carousel>    
             </div>

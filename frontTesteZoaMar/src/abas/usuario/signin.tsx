@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef, FormEvent} from 'react'
 
-import { EndH } from "../components/endH"
-import { Header } from "../components/header"
-import { api } from '../services/api'
+import { EndH } from "../../components/endH"
+import { Header } from "../../components/header"
+import { api } from '../../services/api'
 
 interface CustomerProps{
     id: string;
@@ -32,10 +32,13 @@ export function SignIn(){
 
         if(!emailRef.current?.value || !passwordRef.current?.value) return;
 
-        const response = await api.post("/login", {
+        const response = await api.post("/postLogin", {
             email: emailRef.current?.value,
-            password: passwordRef.current?.value
+            password: passwordRef.current?.value,
+            isAdmin: false
         })
+        console.log(response.data)
+
         // setCustomers(allCustomers => [...allCustomers, response.data])
         // console.log(response.data);
 
@@ -43,11 +46,18 @@ export function SignIn(){
         // console.log(passwordRef.current?.value)
         
     }
-        async function handleDelete(id: string){
-            alert(id);
-
-
-        }
+        // async function handleDelete(id: string){
+        //     try{
+        //         await api.delete('/logins',{
+        //             params:{
+        //                 id: id,
+        //             }
+        //         })
+        //     }catch(err){
+        //         console.log(err);
+        //     }
+        //     // alert(id);
+        // }
 
 
 
@@ -87,7 +97,7 @@ export function SignIn(){
                                 <input
                                 type="submit"
                                 value="Cadastrar"
-                                className="flex bg-black text-white p-2 rounded w-24 h-10 items-center justify-center"
+                                className="flex bg-black text-white p-2 rounded w-24 h-10 items-center justify-center cursor-pointer hover:scale-110 duration-100"
                                 />
                             </div>
                             {/* <div className="flex h-auto w-full justify-center p-5">
@@ -96,7 +106,7 @@ export function SignIn(){
                         </div>
                     </form>
                             
-                        {customers.map((customer) => (
+                        {/* {customers.map((customer) => (
                             <article
                             key={customer.id}
                             >
@@ -107,7 +117,7 @@ export function SignIn(){
 
                                 </button>
                             </article>
-                        ))}
+                        ))} */}
                     <div className="flex flex-col gap-32 items-center">
                         <div className="flex gap-2">
                             <a>Já tem conta? </a>

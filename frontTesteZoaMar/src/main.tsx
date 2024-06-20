@@ -8,12 +8,14 @@ import {
 import './index.css'
 import { Inicio } from './inicio';
 import { CartPage } from './abas/cart';
-import { UserPage } from './abas/user';
-import { SignIn } from './abas/signin';
-import { Camisetas } from './abas/camisetas';
-import { Moletons } from './abas/moletons';
-import { Calcas } from './abas/calcas';
-import { Tenis } from './abas/tenis';
+import { UserLogin } from './abas/usuario/user';
+import { SignIn } from './abas/usuario/signin';
+import { Camisetas } from './abas/itens/camisetas';
+import { Moletons } from './abas/itens/moletons';
+import { Calcas } from './abas/itens/calcas';
+import { Tenis } from './abas/itens/tenis';
+import { AdmPage } from './abas/admPage';
+import { PagLogado } from './abas/usuario/pagLogado';
 
 const router = createBrowserRouter([
 
@@ -27,7 +29,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/user",
-    element: <UserPage />
+    element: <UserLogin />
   },
   {
     path: "/signin",
@@ -50,10 +52,13 @@ const router = createBrowserRouter([
     element: <Tenis />
   },
   {
-    path: "/userPage",
-    element: <UserPage />
-  }
-  
+    path: "/adm",
+    element: <AdmPage />
+  },
+  {
+    path: "/pagLogado",
+    element: <PagLogado />
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

@@ -11,6 +11,10 @@
   },
   "dependencies": {
     "axios": "^1.7.2",
+<<<<<<< HEAD
+=======
+    "emailjs-com": "^3.2.0",
+>>>>>>> TesteConcectCart
     "framer-motion": "^11.2.10",
     "lucide": "^0.383.0",
     "lucide-react": "^0.379.0",
