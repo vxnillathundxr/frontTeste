@@ -4,56 +4,53 @@ import { api } from '../../services/api';
 
 interface ProdutosProps {
     id: string;
-    title: string;
     name: string;
     price: number;
-    stock: number;
-    department: string;
-    tag: string;
+    priceWithDiscount: number;
+    departmentName: string;
     description: string;
-    imagem: Blob;
+    color: string;
+    image: string;
 }
 
 export function CardAdd(){
 
     const [produtos, setProdutos] = useState<ProdutosProps[]>([])
-    const titleRef = useRef<HTMLInputElement | null>(null)
     const nameRef = useRef<HTMLInputElement | null>(null)
     const priceRef = useRef<HTMLInputElement | null>(null)
-    const stockRef = useRef<HTMLInputElement | null>(null)
-    const departamentRef = useRef<HTMLInputElement | null>(null)
-    const tagRef = useRef<HTMLInputElement | null>(null)
+    const priceWithDiscountRef = useRef<HTMLInputElement | null>(null)
+    const departmentNameRef = useRef<HTMLInputElement | null>(null)
     const descriptionRef = useRef<HTMLInputElement | null>(null)
+    const colorRef = useRef<HTMLInputElement | null>(null)
+    const imageRef = useRef<HTMLInputElement | null>(null)
 
-    useEffect(() => {
-        loadCustomers();
-    }, [])
+    // useEffect(() => {
+    //     loadCustomers();
+    // }, [])
 
-    async function loadCustomers() {
-        const response = await api.get("/produtos")        
-        setProdutos(response.data);
-        // console.log(response.data)
-    }
+    // async function loadCustomers() {
+    //     const response = await api.get("/produtos")        
+    //     setProdutos(response.data);
+    //     // console.log(response.data)
+    // }
 
     async function handleSubmit(event: FormEvent){
         event.preventDefault();
-        if(!titleRef.current?.value || 
-           !nameRef.current?.value || 
+        if(!nameRef.current?.value || 
            !priceRef.current?.value ||
-           !stockRef.current?.value ||
-           !departamentRef.current?.value ||
-           !tagRef.current?.value ||
-           !descriptionRef.current?.value
+           !departmentNameRef.current?.value ||
+           !colorRef.current?.value ||
+           !imageRef.current?.value
         )return;
            
-        const response = await api.post("/produtos/", {
-            title: titleRef.current?.value,
+        const response = await api.post("/produtos", {
             name: nameRef.current?.value,
-            price: priceRef.current?.value,
-            stock: stockRef.current?.value,
-            department: departamentRef.current?.value,               
-            tag: tagRef.current?.value,
-            description: descriptionRef.current?.value
+            price: priceRef.current?.valueAsNumber,
+            priceWithDiscount: priceWithDiscountRef.current?.valueAsNumber,
+            departmentName: departmentNameRef.current?.value,               
+            color: colorRef.current?.value,
+            description: descriptionRef.current?.value,
+            image: imageRef.current?.value
             })
             console.log(response.data)
     };
@@ -73,6 +70,12 @@ export function CardAdd(){
                     type="text" 
                     ref={nameRef}
                     />
+                    <input
+                    className='outline rounded gap-1 p-1 bg-white'  
+                    type="desable" 
+                    placeholder='image'
+                    ref={imageRef}  
+                    />
                     <input 
                     className='outline rounded gap-1 p-1 bg-white' 
                     placeholder="Preço" 
@@ -81,28 +84,28 @@ export function CardAdd(){
                     />
                     <input 
                     className='outline rounded gap-1 p-1 bg-white'
-                    placeholder="Estoque" 
-                    name="stock" 
+                    placeholder="Desconto" 
                     type="number" 
-                    ref={stockRef}
-                    />
-                    <input 
-                    className='outline rounded gap-1 p-1 bg-white' 
-                    placeholder="Departamento" 
-                    type="text" 
-                    ref={departamentRef} 
-                    />
-                    <input 
-                    className='outline rounded gap-1 p-1 bg-white'
-                    placeholder="Tag" 
-                    type="text" 
-                    ref={tagRef}
+                    ref={priceWithDiscountRef}
                     />
                     <input 
                     className='outline rounded gap-1 p-1 bg-white' 
                     placeholder="Descrição" 
                     type="text" 
                     ref={descriptionRef} 
+                    />
+                    <input 
+                    className='outline rounded gap-1 p-1 bg-white'
+                    placeholder="Color" 
+                    name="color" 
+                    type="string" 
+                    ref={colorRef}
+                    />
+                    <input 
+                    className='outline rounded gap-1 p-1 bg-white' 
+                    placeholder="Departamento" 
+                    type="text" 
+                    ref={departmentNameRef} 
                     />
                     <div className="flex items-center justify-center">
                     <input
