@@ -30,7 +30,6 @@ export const PagLogado = () => {
     <div>
       <Header />
       <section className="flex items-center p-5">
-        
         {customers.map((customer) => (
           <article 
             key={customer.id}

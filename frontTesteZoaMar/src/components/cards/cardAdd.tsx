@@ -35,7 +35,6 @@ export function CardAdd(){
         // console.log(response.data)
     }
 
-
     async function handleSubmit(event: FormEvent){
         event.preventDefault();
         if(!titleRef.current?.value || 
@@ -66,7 +65,7 @@ export function CardAdd(){
                 <input 
                 type="file" 
                 name="image" />
-            <form    onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <div className='flex flex-col gap-3 items-center px-6'>
                     <input 
                     className='outline rounded gap-1 p-1 bg-white' 
