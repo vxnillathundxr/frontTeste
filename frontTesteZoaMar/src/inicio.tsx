@@ -35,25 +35,25 @@ export function Inicio() {
                     <div className="flex gap-2 md:gap-24">
                         <CardProduto
                         image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                        title="Camisa VASCO - Oficial"
-                        price="R$1000,00"
+                        name="Camisa VASCO - Oficial"
+                        price={1000.00}
                         />
                         <CardProduto
                         image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                        title="Camisa VASCO - Oficial"
-                        price="R$1000,00"    
+                        name="Camisa VASCO - Oficial"
+                        price={1000.00}    
                         />
                     </div>
                     <div className="flex gap-2 md:gap-24">
                         <CardProduto
                         image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                        title="Camisa VASCO - Oficial"
-                        price="R$1000,00"    
+                        name="Camisa VASCO - Oficial"
+                        price={1000.00}    
                         />
                         <CardProduto
                         image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                        title="Camisa VASCO - Oficial"
-                        price="R$1000,00"    
+                        name="Camisa VASCO - Oficial"
+                        price={1000.00}    
                         />
                     </div>
                 </div>
@@ -61,25 +61,25 @@ export function Inicio() {
                     <div className="flex gap-2 md:gap-24">
                         <CardProduto
                         image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJlyE3bG8-loKw6D2nbuVuSJocn4s3JMPtL1UF34dWIe6K6qBhGUsAc69djzszqKGQ8fw&usqp=CAU"
-                        title="Moletom - Preto"
-                        price="R$1000,00"    
+                        name="Moletom - Preto"
+                        price={1000.00}    
                         />
                         <CardProduto
                         image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJlyE3bG8-loKw6D2nbuVuSJocn4s3JMPtL1UF34dWIe6K6qBhGUsAc69djzszqKGQ8fw&usqp=CAU"
-                        title="Moletom - Preto"
-                        price="R$1000,00"    
+                        name="Moletom - Preto"
+                        price={1000.00}    
                         />
                     </div>
                     <div className="flex gap-2 md:gap-24">
                         <CardProduto
                         image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJlyE3bG8-loKw6D2nbuVuSJocn4s3JMPtL1UF34dWIe6K6qBhGUsAc69djzszqKGQ8fw&usqp=CAU"
-                        title="Moletom - Preto"
-                        price="R$1000,00"    
+                        name="Moletom - Preto"
+                        price={1000.00}    
                         />
                         <CardProduto
                         image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJlyE3bG8-loKw6D2nbuVuSJocn4s3JMPtL1UF34dWIe6K6qBhGUsAc69djzszqKGQ8fw&usqp=CAU"
-                        title="Moletom - Preto"
-                        price="R$1000,00"    
+                        name="Moletom - Preto"
+                        price={1000.00}    
                         />
                     </div>
                     </div>
@@ -87,25 +87,25 @@ export function Inicio() {
                     <div className="flex gap-2 md:gap-24">
                         <CardProduto
                         image="https://dcdn.mitiendanube.com/stores/002/975/032/products/calca-cargo-masculina-modelo-urban-preta111-a4cacd28c26da18b5516820081376075-640-0.webp"
-                        title="Calça cargo - Preta"
-                        price="R$1000,00"    
+                        name="Calça cargo - Preta"
+                        price={1000.00}    
                         />
                         <CardProduto
                         image="https://dcdn.mitiendanube.com/stores/002/975/032/products/calca-cargo-masculina-modelo-urban-preta111-a4cacd28c26da18b5516820081376075-640-0.webp"
-                        title="Calça cargo - Preta"
-                        price="R$1000,00"    
+                        name="Calça cargo - Preta"
+                        price={1000.00}    
                         />
                     </div >
                     <div className="flex gap-2 md:gap-24">
                         <CardProduto
                         image="https://dcdn.mitiendanube.com/stores/002/975/032/products/calca-cargo-masculina-modelo-urban-preta111-a4cacd28c26da18b5516820081376075-640-0.webp"
-                        title="Calça cargo - Preta"
-                        price="R$1000,00"    
+                        name="Calça cargo - Preta"
+                        price={1000.00}    
                         />
                         <CardProduto
                         image="https://dcdn.mitiendanube.com/stores/002/975/032/products/calca-cargo-masculina-modelo-urban-preta111-a4cacd28c26da18b5516820081376075-640-0.webp"
-                        title="Calça cargo - Preta"
-                        price="R$1000,00"    
+                        name="Calça cargo - Preta"
+                        price={1000.00}    
                         />
                     </div>
                 </div>
@@ -113,25 +113,25 @@ export function Inicio() {
                     <div className="flex gap-2 md:gap-24">
                         <CardProduto
                         image="https://static.rockcity.com.br/public/rockcity/imagens/produtos/tenis-nike-sb-chron-2-preto-branco-97523.jpg"
-                        title="Tênis Nike SB - Preto"
-                        price="R$1000,00"    
+                        name="Tênis Nike SB - Preto"
+                        price={1000.00}    
                         />
                         <CardProduto
                         image="https://static.rockcity.com.br/public/rockcity/imagens/produtos/tenis-nike-sb-chron-2-preto-branco-97523.jpg"
-                        title="Tênis Nike SB - Preto"
-                        price="R$1000,00"    
+                        name="Tênis Nike SB - Preto"
+                        price={1000.00}    
                         />
                     </div>
                     <div className="flex gap-2 md:gap-24">
                         <CardProduto
                         image="https://static.rockcity.com.br/public/rockcity/imagens/produtos/tenis-nike-sb-chron-2-preto-branco-97523.jpg"
-                        title="Tênis Nike SB - Preto"
-                        price="R$1000,00"    
+                        name="Tênis Nike SB - Preto"
+                        price={1000.00}    
                         />
                         <CardProduto
                         image="https://static.rockcity.com.br/public/rockcity/imagens/produtos/tenis-nike-sb-chron-2-preto-branco-97523.jpg"
-                        title="Tênis Nike SB - Preto"
-                        price="R$1000,00"    
+                        name="Tênis Nike SB - Preto"
+                        price={1000.00}    
                         />
                     </div>
                 </div>
