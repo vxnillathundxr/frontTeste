@@ -38,13 +38,13 @@ const Carousel: React.FC<CarouselProps> = ({
           onClick={prev}
           className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
         >
-          <ChevronLeft className="size-10" />
+          <ChevronLeft className="md:size-10 size-5" />
         </button>
         <button
           onClick={next}
           className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
         >
-          <ChevronRight className="size-10"/>
+          <ChevronRight className="md:size-10 size-5"/>
         </button>
       </div>
 

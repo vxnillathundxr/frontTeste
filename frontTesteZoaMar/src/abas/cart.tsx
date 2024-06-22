@@ -9,15 +9,57 @@ export function CartPage(){
         <div>
             <div className="flex flex-col gap-16">
                 <Header/>
-                <div className="flex flex-col w-[100vw] h-screen items-center gap-9 justify-center pb-40">
-                    <div className="flex  flex-col md:flex-row items-center w-[100vw] justify-center h-3/4 gap-10">
-                        <div className="flex flex-col h-full md:w-[40vw] w-[90vw] bg-zinc-300 md:p-10 p-3 rounded md:gap-16 gap-5 left-0">
+                <div className="flex flex-col w-[100vw] h-scree  gap-9 justify-center md:pb-28 md:pt-28 pt-8 pb-8">
+                    <div className="flex  flex-col md:flex-row w-[100vw] md:items-start items-center justify-center h-3/4 gap-10">
+                        <div className="flex flex-col h-auto md:w-[40vw] w-[90vw] bg-zinc-300 md:p-10 p-3 rounded md:gap-16 gap-5 left-0">
                             <h1 className="font-bold text-4xl">Carrinho</h1>
                             <CartComponent
                             title="Moletom Lozango"
                             price="R$149,90"
                             image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
                             />
+                            <CartComponent
+                            title="Moletom Lozango"
+                            price="R$149,90"
+                            image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            />
+                            <CartComponent
+                            title="Moletom Lozango"
+                            price="R$149,90"
+                            image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            />
+                            <CartComponent
+                            title="Moletom Lozango"
+                            price="R$149,90"
+                            image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            />
+                            <CartComponent
+                            title="Moletom Lozango"
+                            price="R$149,90"
+                            image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            />
+                            <CartComponent
+                            title="Moletom Lozango"
+                            price="R$149,90"
+                            image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            />
+                            <CartComponent
+                            title="Moletom Lozango"
+                            price="R$149,90"
+                            image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            />
+                            <CartComponent
+                            title="Moletom Lozango"
+                            price="R$149,90"
+                            image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            />
+                            <CartComponent
+                            title="Moletom Lozango"
+                            price="R$149,90"
+                            image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            />
+                            
+                            
                         </div>
                         <div className="flex flex-col h-auto md:w-[40vw] w-[90vw] bg-zinc-300 md:p-10 p-3 rounded gap-5">
                             <h1 className="font-bold text-2xl">Forma de pagamento</h1>
