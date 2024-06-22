@@ -12,25 +12,25 @@ export function Camisetas(){
                     <div className="flex gap-2 md:gap-24">
                         <CardProduto
                         image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                        title="Camisa VASCO - Oficial"
-                        price="R$1000,00"    
+                        name="Camisa VASCO - Oficial"
+                        price={1000.00} 
                         />
                         <CardProduto
                         image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                        title="Camisa VASCO - Oficial"
-                        price="R$1000,00"    
+                        name="Camisa VASCO - Oficial"
+                        price={1000.00} 
                         />
                     </div>
                     <div className="flex gap-2 md:gap-24">
                         <CardProduto
                         image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                        title="Camisa VASCO - Oficial"
-                        price="R$1000,00"    
+                        name="Camisa VASCO - Oficial"
+                        price={1000.00} 
                         />
                         <CardProduto
                         image="https://imgcentauro-a.akamaihd.net/1366x1366/M1327C02.jpg"
-                        title="Camisa VASCO - Oficial"
-                        price="R$1000,00"    
+                        name="Camisa VASCO - Oficial"
+                        price={1000.00} 
                         />
                     </div>
                 </div>

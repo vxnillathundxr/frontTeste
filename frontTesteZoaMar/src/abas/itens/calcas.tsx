@@ -12,25 +12,25 @@ export function Calcas(){
                     <div className="flex gap-2 md:gap-24">
                         <CardProduto
                         image="https://dcdn.mitiendanube.com/stores/002/975/032/products/calca-cargo-masculina-modelo-urban-preta111-a4cacd28c26da18b5516820081376075-640-0.webp"
-                        title="Calça cargo - Preta"
-                        price="R$1000,00"    
+                        name="Calça cargo - Preta"
+                        price={1000.00}   
                         />
                         <CardProduto
                         image="https://dcdn.mitiendanube.com/stores/002/975/032/products/calca-cargo-masculina-modelo-urban-preta111-a4cacd28c26da18b5516820081376075-640-0.webp"
-                        title="Calça cargo - Preta"
-                        price="R$1000,00"    
+                        name="Calça cargo - Preta"
+                        price={1000.00}   
                         />
                     </div>
                     <div className="flex gap-2 md:gap-24">
                         <CardProduto
                         image="https://dcdn.mitiendanube.com/stores/002/975/032/products/calca-cargo-masculina-modelo-urban-preta111-a4cacd28c26da18b5516820081376075-640-0.webp"
-                        title="Calça cargo - Preta"
-                        price="R$1000,00"    
+                        name="Calça cargo - Preta"
+                        price={1000.00}   
                         />
                         <CardProduto
                         image="https://dcdn.mitiendanube.com/stores/002/975/032/products/calca-cargo-masculina-modelo-urban-preta111-a4cacd28c26da18b5516820081376075-640-0.webp"
-                        title="Calça cargo - Preta"
-                        price="R$1000,00"    
+                        name="Calça cargo - Preta"
+                        price={1000.00}   
                         />
                     </div>
                 </div>

@@ -32,13 +32,14 @@ export function Moletons(){
     return(
         <div>
         <Header />
-            <div className="flex flex-col bg-white">
+            <div className="flex flex-col gap-20 bg-white">
                 <h1 className='text-5xl font-bold p-10'>Moletons</h1>
                 
-            <section className="flex ">
+            <section className="flex items-center justify-center gap-24">
                 {Array.isArray(produtos) &&  produtos.map( (produto) => (
                     
                 <article
+                // className="flex gap-2"
                     key={produto.id}
                     >
                         <CardProduto
