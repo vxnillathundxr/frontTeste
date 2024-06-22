@@ -8,29 +8,15 @@ export function AdmPage(){
     return(
         <div className='flex flex-col gap-60'>
             <Header/>
-            <div className='flex-wrap flex gap-8 items-center justify-center'>
-                <div>
+            <div className='flex gap-10 items-center justify-center'>
+                <div className="flex mt-14">
                     <CardAdd/>
                 </div>
-                <div>
-                    <CardRemove
-                    title="Remover um Item"
-                    searchID="ID do produto"
-                    searchTag="Tag do produto"
-                    // Interessante o remove, sei como fazer
-                    remove="Remover produto"
-                    />
+                <div className="flex mt-14">
+                    <CardRemove/>
                 </div>
-                <div>
-                    <CardUpdate
-                    title="Atualizar um Item"
-                    button="Atualizar Item"
-                    name="Novo nome"
-                    price="Novo preço"
-                    stock="Nova quantidade em estoque"
-                    departament="Novo departamento"
-                    tag="Nova tag"
-                    />
+                <div className="flex mt-14">
+                    <CardUpdate/>   
                 </div>
             </div>
             <EndH/>

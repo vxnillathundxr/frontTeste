@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef, FormEvent } from 'react';
-import axios from 'axios';
 import { api } from '../../services/api';
 
 interface ProdutosProps {
@@ -11,11 +10,11 @@ interface ProdutosProps {
     description: string;
     color: string;
     image: string;
+    array: string;
 }
 
 export function CardAdd(){
 
-    const [produtos, setProdutos] = useState<ProdutosProps[]>([])
     const nameRef = useRef<HTMLInputElement | null>(null)
     const priceRef = useRef<HTMLInputElement | null>(null)
     const priceWithDiscountRef = useRef<HTMLInputElement | null>(null)
@@ -24,6 +23,7 @@ export function CardAdd(){
     const colorRef = useRef<HTMLInputElement | null>(null)
     const imageRef = useRef<HTMLInputElement | null>(null)
 
+<<<<<<< HEAD
     useEffect(() => {
         loadProducts();
     }, [])
@@ -37,6 +37,8 @@ export function CardAdd(){
     }
 }
 
+=======
+>>>>>>> 117e083ec8c224ce480f2a5e454a2b3a6b6ea5b6
     async function handleSubmit(event: FormEvent){
         event.preventDefault();
         if(!nameRef.current?.value || 
@@ -55,18 +57,20 @@ export function CardAdd(){
             description: descriptionRef.current?.value,
             image: imageRef.current?.value
             })
-            console.log(response.data)
     };
 
     return (
-        <div className='bg-zinc-300 w-60 rounded-lg overflow-hidden shadow-lg items-center'>
+        <div className='bg-zinc-300 w-60 h-[77vh] rounded-lg overflow-hidden shadow-lg items-center'>
             <div className='flex flex-col gap-5 px-6 py-4'>
-                <h1 className='text-lg font-bold pl-4'>Title</h1>
+                <div>
+                <h1 className='text-2xl font-bold pl-4 flex items-center justify-center'>Adicionar</h1>
+                <h1 className='text-2xl font-bold pl-4 flex items-center justify-center'>Produto</h1>
+                </div>
                 <input 
                 type="file" 
                 name="image" />
             <form onSubmit={handleSubmit}>
-                <div className='flex flex-col gap-3 items-center px-6'>
+                <div className='flex flex-col gap-3 items-center px-6 mt-1'>
                     <input 
                     className='outline rounded gap-1 p-1 bg-white' 
                     placeholder="Nome do produto"
@@ -111,15 +115,23 @@ export function CardAdd(){
                     ref={departmentNameRef} 
                     />
                     <div className="flex items-center justify-center">
-                    <input
+                    {/* <input
                     type="submit"
                     value="Postar"
                     className="flex bg-black text-white p-2 rounded w-24 h-10 items-center justify-center cursor-pointer hover:scale-110 duration-100"
-                    />
+                    /> */}
                     </div>
+                    <button
+                    className='hover:bg-zinc-500 hover:text-black  ease-linear rounded-lg bg-black font-bold
+                    text-white p-2 mb-2 w-48 mt-10'
+                    onClick={handleSubmit}
+                    >
+                    Postar Produto
+                    </button>
                 </div>
             </form>
             </div>
+<<<<<<< HEAD
             <section className="flex ">
                 {Array.isArray(produtos) &&  produtos.map( (produto) => (
                     <article
@@ -137,12 +149,15 @@ export function CardAdd(){
                 </article>
                 ))}
             </section>
+=======
+>>>>>>> 117e083ec8c224ce480f2a5e454a2b3a6b6ea5b6
         </div>
     );
 }
 
 export default CardAdd;
 
+<<<<<<< HEAD
 // import React, { useState, useEffect } from 'react';
 // import axios from 'axios';  
 // import { api } from '../../services/api';
@@ -195,3 +210,6 @@ export default CardAdd;
 // }
 
 // export default CardAdd;
+=======
+
+>>>>>>> 117e083ec8c224ce480f2a5e454a2b3a6b6ea5b6
