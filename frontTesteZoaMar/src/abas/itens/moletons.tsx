@@ -26,7 +26,7 @@ export function Moletons(){
     }, [])
 
     async function loadproducts() {
-        const response = await api.get("/produtos/1?forSale=true") 
+        const response = await api.get("/produtos/1?forSale=true")
         setProdutos(response.data);
     }
     return(

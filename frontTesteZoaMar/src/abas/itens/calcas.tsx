@@ -3,6 +3,7 @@ import { api } from '../../services/api';
 import { EndH } from '../../components/endH';
 import { Header } from "../../components/header";
 import CardProduto from "../../components/cards/cardProduto";
+import { Filter } from '../../components/filter';
 
 interface ProdutosProps {
     id: string;

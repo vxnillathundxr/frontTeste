@@ -16,6 +16,7 @@ import { Calcas } from './abas/itens/calcas';
 import { Tenis } from './abas/itens/tenis';
 import { AdmPage } from './abas/admPage';
 import { PagLogado } from './abas/usuario/pagLogado';
+import { Produto } from './abas/produto';
 
 const router = createBrowserRouter([
 
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
     path: "/pagLogado",
     element: <PagLogado />
   },
+  {
+    path: "/produto",
+    element: <Produto/>
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

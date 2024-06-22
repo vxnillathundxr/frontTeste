@@ -2,7 +2,6 @@ import BotaoParaInput from './search'
 import BotaoParaMenu from './menu'
 import ExpandableMenu from './menu'
 import { Rabbit, ShoppingCart, UserRound } from 'lucide-react'
-import faceIcon from "../assets/facebookIcon.svg"
 // import menuIcon from '../assets/menuIcon.svg'
 
 export function Header(){
@@ -17,7 +16,7 @@ export function Header(){
                             {/* <BotaoParaMenu /> */}
                             <ExpandableMenu />
                             </div>
-                            <a href={'/'} className="text-white font-ns text-3xl md:text-4xl">ZoaMar</a>
+                            <a href={'/'} className="text-white font-ns text-3xl md:text-4xl">Zoamar</a>
                         </nav>
                         {/* divCertesAbas */}
                     </div>
