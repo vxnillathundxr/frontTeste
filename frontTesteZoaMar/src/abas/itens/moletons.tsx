@@ -33,7 +33,10 @@ export function Moletons(){
         <div>
         <Header />
             <div className="flex flex-col gap-20 bg-white">
-                <h1 className='text-5xl font-bold p-10'>Moletons</h1>
+                 <div>
+                    <h1 className='text-5xl font-bold p-10'>Moletons</h1>
+                    <div className="flex bg-black p-0.5 w-80 absolute top-[20vh] left-8"></div>
+                </div>
                 
             <section className="flex items-center justify-center gap-24">
                 {Array.isArray(produtos) &&  produtos.map( (produto) => (
