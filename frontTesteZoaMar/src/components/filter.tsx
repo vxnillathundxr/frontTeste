@@ -3,7 +3,7 @@ import SizeFilter from "./sizeFilter";
 
 export function Filter(){
     return(
-        <div className='md:w-1/5 w-[80vw] md:h-1/4 h-auto md:p-16 p-5'>
+        <div className='md:w-1/4 w-[80vw] md:h-1/4 h-auto md:p-16 p-5'>
             <div className='bg-zinc-300 p-5 rounded '>
                 <h1 className='text-xl'>filtros</h1>
                 <SizeFilter/>

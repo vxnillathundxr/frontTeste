@@ -34,31 +34,30 @@ export function Camisetas(){
     return(
         <div>
         <Header />
-            <div className="flex flex-col gap-20 bg-white">
-
+            <div className="flex flex-col gap-5 bg-white">
                 <div>
                     <h1 className='text-5xl font-bold p-10'>Camisetas</h1>
                     <div className="flex bg-black p-0.5 w-[22vw] absolute top-[20vh] left-8"></div>
+                </div>  
+                <div className='flex flex-col md:flex-row justify-center'>
+                    <Filter/>
+                    <section className="flex items-center justify-center gap-5">
+                        {Array.isArray(produtos) &&  produtos.map( (produto) => (    
+                        <article
+                            // className="flex gap-2"
+                            key={produto.id}
+                            >
+                            <CardProduto
+                                image={produto.image}
+                                name={produto.name}
+                                price={produto.price}
+                                priceWithDiscount={produto.priceWithDiscount}
+                                desconto={true}
+                            />
+                        </article>
+                    ))}
+                </section>
                 </div>
-                <Filter/>   
-                
-            <section className="flex items-center justify-center gap-24">
-                {Array.isArray(produtos) &&  produtos.map( (produto) => (
-                    
-                <article
-                // className="flex gap-2"
-                    key={produto.id}
-                    >
-                       <CardProduto
-                        image={produto.image}
-                        name={produto.name}
-                        price={produto.price}
-                        priceWithDiscount={produto.priceWithDiscount}
-                        desconto={true}
-                        />
-                </article>
-                ))}
-            </section>
             </div>
         <EndH />
     </div>

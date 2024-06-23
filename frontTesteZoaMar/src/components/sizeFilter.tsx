@@ -16,7 +16,7 @@ const SizeFilter: React.FC = () => {
   return (
     <div className="p-4">
       <h2 className="text-lg font-semibold mb-4">Tamanho</h2>
-      <div className="flex flex-wrap gap-10">
+      <div className="flex flex-wrap gap-9">
         {sizes.map((size) => (
           <label key={size} className="flex items-center space-x-2">
             <input

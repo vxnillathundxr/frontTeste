@@ -15,7 +15,7 @@ const CardProduto: React.FC<CardProdutoProps> = ({name, price, image, priceWithD
     if(desconto){
         risco = <div className='flex flex-col gap-2'>
             <div className='flex flex-col gap-3 text-bold md:text-lg text-lg line-through'>R${price}</div>
-            <div className='flex flex-col gap-3 text-bold md:text-3xl text-2xl '>R${priceWithDiscount}</div>
+            <div className='flex flex-col gap-3 text-bold md:text-3xl text-3xl'>R${priceWithDiscount}</div>
         </div>
     }
     else{
@@ -29,8 +29,7 @@ const CardProduto: React.FC<CardProdutoProps> = ({name, price, image, priceWithD
             <div className='flex flex-col gap-5 px-3 py-3'>
                 <img className='flex rounded' src={image}/>
                 <div className='flex flex-col gap-3'>
-                    <h1 className='md:text-3xl text-2xl font-bold'>{name}</h1>
-                    <div className='flex flex-col gap-3 text-bold md:text-2xl'>{price}</div>
+                    <h1 className='md:text-3xl text-3xl font-bold'>{name}</h1>
                     <div>{risco}</div>
                     <a href='/produto'  className='hover:bg-zinc-500 hover:text-black duration-200 rounded-lg bg-black font-bold text-xl text-white p-1 mb-2 cursor-pointer'>Ver Mais</a>
                 </div>
