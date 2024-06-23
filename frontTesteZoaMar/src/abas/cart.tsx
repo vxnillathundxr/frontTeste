@@ -14,49 +14,49 @@ export function CartPage(){
                         <div className="flex flex-col h-auto md:w-[40vw] w-[90vw] bg-zinc-300 md:p-10 p-3 rounded md:gap-16 gap-5 left-0">
                             <h1 className="font-bold text-4xl">Carrinho</h1>
                             <CartComponent
-                            title="Moletom Lozango"
-                            price="R$149,90"
                             image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            name="Moletom Lozango"
+                            price="R$149,90"
                             />
                             <CartComponent
-                            title="Moletom Lozango"
-                            price="R$149,90"
                             image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            name="Moletom Lozango"
+                            price="R$149,90"
                             />
                             <CartComponent
-                            title="Moletom Lozango"
-                            price="R$149,90"
                             image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            name="Moletom Lozango"
+                            price="R$149,90"
                             />
                             <CartComponent
-                            title="Moletom Lozango"
-                            price="R$149,90"
                             image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            name="Moletom Lozango"
+                            price="R$149,90"
                             />
                             <CartComponent
-                            title="Moletom Lozango"
-                            price="R$149,90"
                             image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            name="Moletom Lozango"
+                            price="R$149,90"
                             />
                             <CartComponent
-                            title="Moletom Lozango"
-                            price="R$149,90"
                             image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            name="Moletom Lozango"
+                            price="R$149,90"
                             />
                             <CartComponent
-                            title="Moletom Lozango"
-                            price="R$149,90"
                             image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            name="Moletom Lozango"
+                            price="R$149,90"
                             />
                             <CartComponent
-                            title="Moletom Lozango"
-                            price="R$149,90"
                             image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            name="Moletom Lozango"
+                            price="R$149,90"
                             />
                             <CartComponent
-                            title="Moletom Lozango"
-                            price="R$149,90"
                             image="https://i.im.ge/2024/06/20/KHDZgD.moletomSol.jpeg"
+                            name="Moletom Lozango"
+                            price="R$149,90"
                             />
                             
                             

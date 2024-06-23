@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from '../../components/header';
-import { EndH } from '../../components/endH';
+// import { EndH } from '../../components/endH';
 import { api } from '../../services/api';
 
 interface CustomerProps {

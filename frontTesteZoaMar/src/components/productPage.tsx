@@ -2,16 +2,16 @@ import React from "react";
 import SizeSelector from "./sizeSelector";
 
 interface ProductPageProps{
-    title: string
+    name: string
     price: string
     description: string
     image: string
     desconto: boolean
     newprice: string
-    id_product: number
+   productId: number
 }
 
-const ProductPage: React.FC<ProductPageProps> = ({title, price,description, image, newprice, desconto, id_product}) =>{
+const ProductPage: React.FC<ProductPageProps> = ({name, price, description, image, newprice, desconto,productId}) =>{
 
     let risco
 
@@ -31,10 +31,10 @@ const ProductPage: React.FC<ProductPageProps> = ({title, price,description, imag
         <div className="flex md:flex-row flex-col w-4/5 h-auto p-10 gap-32 justify-center  bg-zinc-300 rounded">
                     <div className="flex flex-col">
                         <img className="rounded md:size-[700px] size-72" src={image} alt="Moletom" />
-                        <div className="text-sm">{id_product}</div>
+                        <div className="text-sm">{productId}</div>
                     </div>
                     <div className="flex flex-col gap-14">
-                        <h1 className="font-bold text-7xl">{title}</h1>
+                        <h1 className="font-bold text-7xl">{name}</h1>
                         <div>{risco}</div>
                         <div className="flex flex-col justify-center items-center gap-48">
                             <p className="font-medium text-2xl">{description}</p>

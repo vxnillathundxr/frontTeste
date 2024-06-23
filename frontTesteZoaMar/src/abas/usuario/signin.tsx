@@ -1,8 +1,7 @@
 import { useEffect, useState, useRef, FormEvent} from 'react'
-
-import { EndH } from "../../components/endH"
-import { Header } from "../../components/header"
 import { api } from '../../services/api'
+import { Header } from "../../components/header"
+import { EndH } from "../../components/endH"
 
 interface CustomerProps{
     id: string;

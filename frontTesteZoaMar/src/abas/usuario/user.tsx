@@ -35,9 +35,9 @@ export const UserLogin = () => {
         localStorage.setItem("token",response.data.accessToken)
           navigate('/pagLogado');
 
-        if(response.data.isAdmin === true) return;
-        localStorage.setItem("token",response.data.accessToken)
-        navigate('/adm');
+        // if(response.data.isAdmin === true) return;
+        // localStorage.setItem("token",response.data.accessToken)
+        // navigate('/adm');
         
       } catch (error) {
         alert('Invalid email or password');

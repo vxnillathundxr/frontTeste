@@ -11,16 +11,16 @@ export function SignInPage(){
                         <div className="flex flex-col text-3xl font-medium gap-16">
                             <div className="flex border-b-2 border-black justify-between items-center p-3">
                                 <p>Nome</p>
-                                <Pencil/>
+                                <Pencil/>   
                             </div>
                             <div className="flex border-b-2 border-black justify-between items-center p-3">
                                 <p>E-mail</p>
                                 <Pencil/>
                             </div>
-                            <div className="flex border-b-2 border-black justify-between items-center p-3">
+                            {/* <div className="flex border-b-2 border-black justify-between items-center p-3">
                                 <p>Telefone</p>
                                 <Pencil/>
-                            </div>
+                            </div> */}
                             <div className="flex border-b-2 border-black justify-between items-center p-3">
                                 <a href="">Alterar Senha</a>
                                 <Pencil/>
@@ -28,7 +28,7 @@ export function SignInPage(){
                         </div>
                     </div>
                     <div className="flex h-full w-2/4 bg-zinc-300 p-10 rounded">
-                        <h1 className="font-bold text-4xl" >Meus Pedidos</h1>
+                        <h1 className="font-bold text-4xl">Meus Pedidos</h1>
                         <div>
 
                         </div>

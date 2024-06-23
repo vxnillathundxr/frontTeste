@@ -1,5 +1,4 @@
 import BotaoParaInput from './search'
-import BotaoParaMenu from './menu'
 import ExpandableMenu from './menu'
 import { Rabbit, ShoppingCart, UserRound } from 'lucide-react'
 

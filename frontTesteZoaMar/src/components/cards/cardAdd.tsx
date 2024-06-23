@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useRef, FormEvent } from 'react';
-import axios from 'axios';
 import { api } from '../../services/api';
 
 interface ProdutosProps {
     id: string;
     name: string;
+    image: string;
     price: number;
     priceWithDiscount: number;
     departmentName: string;
     description: string;
     color: string;
-    image: string;
+    array: string;
 }
 
 export function CardAdd(){
@@ -67,14 +67,17 @@ export function CardAdd(){
     };
 
     return (
-        <div className='bg-zinc-300 w-60 rounded-lg overflow-hidden shadow-lg items-center'>
+        <div className='bg-zinc-300 w-60 h-[77vh] rounded-lg overflow-hidden shadow-lg items-center'>
             <div className='flex flex-col gap-5 px-6 py-4'>
-                <h1 className='text-lg font-bold pl-4'>Title</h1>
+                <div>
+                <h1 className='text-2xl font-bold pl-4 flex items-center justify-center'>Adicionar</h1>
+                <h1 className='text-2xl font-bold pl-4 flex items-center justify-center'>Produto</h1>
+                </div>
                 <input 
                 type="file" 
                 name="image" />
             <form onSubmit={handleSubmit}>
-                <div className='flex flex-col gap-3 items-center px-6'>
+                <div className='flex flex-col gap-3 items-center px-6 mt-1'>
                     <input 
                     className='outline rounded gap-1 p-1 bg-white' 
                     placeholder="Nome do produto"
@@ -119,15 +122,21 @@ export function CardAdd(){
                     ref={departmentNameRef} 
                     />
                     <div className="flex items-center justify-center">
-                    <input
+                    {/* <input
                     type="submit"
                     value="Postar"
                     className="flex bg-black text-white p-2 rounded w-24 h-10 items-center justify-center cursor-pointer hover:scale-110 duration-100"
-                    />
+                    /> */}
                     </div>
+                    <button
+                    className='hover:bg-zinc-500 hover:text-black  ease-linear rounded-lg bg-black font-bold
+                    text-white p-2 mb-2 w-48 mt-10'
+                    onClick={handleSubmit}
+                    >
+                    Postar Produto
+                    </button>
                 </div>
             </form>
-                {/* <button className='hover:bg-zinc-500 hover:text-black hover:ease-linear ease-linear rounded-lg bg-black font-bold text-xl text-white p-1 mb-2' onClick={handleSubmit}>{button}</button> */}
             </div>
 
             <section className="flex ">
@@ -140,15 +149,10 @@ export function CardAdd(){
                             <p><span className="md:text-3xl text-base font-bold">Nome:</span>{produto.name}</p>
                             <p><span className="flex flex-col gap-3 text-bold md:text-2xl">Preço:</span>{produto.price}</p>
                             <p><span className="flex flex-col gap-3 text-bold md:text-2xl">Color</span>{produto.color}</p>
-                        {/* <img className='flex rounded' src={produto.image} alt={produto.name} />
-                        <div className='flex flex-col gap-3'>
-                        <h1 className='md:text-3xl text-base font-bold'>{produto.name}</h1>
-                            <div className='flex flex-col gap-3 text-bold md:text-2xl'>{produto.price}</div> */}
                             <button className='hover:bg-zinc-500 hover:text-black duration-200  rounded-lg bg-black font-bold text-xl text-white p-1 mb-2'>Ver Mais
                             </button>
                         </div>
                         </div>
-                    {/* </div> */}
                 </article>
                 ))}
             </section>
