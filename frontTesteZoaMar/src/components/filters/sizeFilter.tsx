@@ -35,3 +35,4 @@ const SizeFilter: React.FC = () => {
 };
 
 export default SizeFilter;
+

@@ -3,7 +3,8 @@ import { api } from '../../services/api';
 import { EndH } from '../../components/endH';
 import { Header } from "../../components/header";
 import CardProduto from "../../components/cards/cardProduto";
-import { Filter } from '../../components/filter';
+import { Filter } from '../../components/filters/filter';
+import ColorFilter from '../../components/filters/colorFilter';
 
 interface ProdutosProps {
     id: string;
@@ -24,7 +25,7 @@ export function Calcas(){
 
     useEffect(() => {
         loadproducts();
-        console.log('roudou loadProducts')
+        // console.log('roudou loadProducts')
     }, [])
 
     async function loadproducts() {
@@ -53,6 +54,7 @@ export function Calcas(){
                                 price={produto.price}
                                 priceWithDiscount={produto.priceWithDiscount}
                                 desconto={true}
+                                color=""
                             />
                         </article>
                     ))}

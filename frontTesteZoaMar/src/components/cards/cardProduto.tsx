@@ -6,9 +6,10 @@ interface CardProdutoProps {
     price: number;
     priceWithDiscount: number
     desconto: boolean
+    color: string;
 }
 
-const CardProduto: React.FC<CardProdutoProps> = ({name, price, image, priceWithDiscount, desconto}) =>{
+const CardProduto: React.FC<CardProdutoProps> = ({name, price, image, priceWithDiscount, desconto, color}) =>{
 
     let risco
 

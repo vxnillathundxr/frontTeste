@@ -3,7 +3,7 @@ import { api } from '../../services/api';
 import { EndH } from '../../components/endH';
 import { Header } from "../../components/header";
 import CardProduto from "../../components/cards/cardProduto";
-import { Filter } from '../../components/filter';
+import { Filter } from '../../components/filters/filter';
 
 interface ProdutosProps {
     id: string;
@@ -53,6 +53,7 @@ export function Moletons(){
                                 price={produto.price}
                                 priceWithDiscount={produto.priceWithDiscount}
                                 desconto={true}
+                                color=""
                                 />
                         </article>
                         ))}

@@ -1,7 +1,7 @@
 import { EndH } from "../components/endH";
 import { Header } from "../components/header";
 import ProductPage from "../components/productPage";
-import SizeSelector from "../components/sizeSelector";
+import SizeSelector from "../components/filters/sizeSelector";
 
 export function Produto(){
     return(
