@@ -1,11 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { CartProvider } from './components/cartContext';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './index.css';
 import { Inicio } from './inicio';
 import { CartPage } from './abas/cart';
 import { UserLogin } from './abas/usuario/user';
@@ -17,9 +14,9 @@ import { Tenis } from './abas/itens/tenis';
 import { AdmPage } from './abas/admPage';
 import { PagLogado } from './abas/usuario/pagLogado';
 import { Produto } from './abas/produto';
+import ProductPage from './components/productPage';
 
 const router = createBrowserRouter([
-
   {
     path: "/",
     element: <Inicio />
@@ -62,12 +59,14 @@ const router = createBrowserRouter([
   },
   {
     path: "/produto",
-    element: <Produto/>
-  }
-])
+    element: <Produto />
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
-  </React.StrictMode>,
-)
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
+  </React.StrictMode>
+);
