@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Routes, Route, Navigate } from 'react-router-dom';
-import { PagLogado } from './pagLogado';
 import { EndH } from "../../components/endH";
 import { Header } from "../../components/header";
 import { useNavigate } from 'react-router-dom';

@@ -1,0 +1,24 @@
+// import { Divide } from 'lucide';
+// import React, { ChangeEvent } from 'react';
+
+// interface FileInputProps {
+//   onFileSelect: (file: File | null) => void;
+// }
+
+// const FileInput: React.FC<FileInputProps> = ({ onFileSelect }) => {
+//   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
+//     const fileList = event.target.files;
+//     if (fileList && fileList.length > 0) {
+//       const selectedFile = fileList[0];
+//       onFileSelect(selectedFile);
+//     } else {
+//       onFileSelect(null);
+//     }
+//   };
+
+//   return (
+
+//   );
+// };
+
+// export default FileInput;

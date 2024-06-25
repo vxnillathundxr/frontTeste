@@ -23,13 +23,13 @@ const ColorFilter: React.FC = () => {
   const handleCheckboxChange = (color: string) => {
     switch (color) {
       case 'vermelho':
-        setApiUrl('/produtos/3?color=vermelho'); // Exemplo de URL diferente para a cor vermelha
+        setApiUrl('/produtos/2?color=vermelho'); // Exemplo de URL diferente para a cor vermelha
         break;
       case 'azul':
-        setApiUrl('/produtos/3?color=azul'); // Exemplo de URL diferente para a cor azul
+        setApiUrl('/produtos/2?color=azul'); // Exemplo de URL diferente para a cor azul
         break;
       case 'verde':
-        setApiUrl('/produtos/3?color=verde'); // Exemplo de URL diferente para a cor verde
+        setApiUrl('/produtos/2?color=verde'); // Exemplo de URL diferente para a cor verde
         break;
       case 'Multicolorido':
         setApiUrl('/produtos/?color=multicolorido'); // Exemplo de URL diferente para a cor multicolorida
@@ -53,7 +53,7 @@ const ColorFilter: React.FC = () => {
         {colors.map((color) => (
           <label key={color} className="flex items-center space-x-2">
             <input
-              type="checkbox"
+              type="radio"
               value={color}
               checked={selectedColors.includes(color)}
               onChange={() => handleCheckboxChange(color)}

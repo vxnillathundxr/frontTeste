@@ -17,6 +17,8 @@ import { Tenis } from './abas/itens/tenis';
 import { AdmPage } from './abas/admPage';
 import { PagLogado } from './abas/usuario/pagLogado';
 import { Produto } from './abas/produto';
+import ProductPage from './components/productPage';
+import CardProduto from './components/cards/cardProduto';
 
 const router = createBrowserRouter([
 
@@ -61,8 +63,8 @@ const router = createBrowserRouter([
     element: <PagLogado />
   },
   {
-    path: "/produto",
-    element: <Produto/>
+    path: "/productPage",
+    element: <ProductPage />
   }
 ])
 

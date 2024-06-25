@@ -17,13 +17,13 @@ export function CardRemove(){
 }
 
     return(
-        <div className='bg-zinc-300 w-60 h-[77vh] rounded-lg overflow-hidden shadow-lg items-center '>
+        <div className='bg-zinc-300 w-60 h-[80vh] rounded-lg overflow-hidden shadow-lg items-center '>
                 <div className="py-4">
                 <h1 className='text-2xl font-bold pl-4 flex items-center justify-center'>Remover</h1>
                 <h1 className='text-2xl font-bold pl-4 flex items-center justify-center'>Produto</h1>
                 </div>
             <div className='flex flex-col gap-8 p-3 justify-center'>
-                <div className='flex flex-col justify-center gap-4 mt-11'>
+                <div className='flex flex-col justify-center gap-4 mt-[10vh]'>
                     <input 
                     className='outline rounded gap-1 p-1 bg-white' 
                     type="text" 
@@ -34,7 +34,7 @@ export function CardRemove(){
                 <button 
                 className='hover:bg-zinc-500 hover:text-black  ease-linear rounded-lg bg-black font-bold
                 text-white p-2 mb-2 mt-[40vh]' onClick={handleSubmit}
-                >Remover</button>    
+                >Remover Produto</button>    
             </div>
         </div>
     )

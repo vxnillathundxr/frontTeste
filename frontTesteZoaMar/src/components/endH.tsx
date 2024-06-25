@@ -8,8 +8,11 @@ export function EndH(){
             <div className="bg-black h-80 w-full mt-[100px]">
                 <div className="md:flex items-center text-white justify-center md:gap-6 md:space-x-28 space-y-10 pt-2 md:mr-4">
                     <div className="flex-col items-center md:mt-12 md:text-2xl justify-center pt-10 md:pt-20 md:flex">
-                        <h2 className="flex items-center justify-center">RECEBA NOVIDADES E GANHE</h2>
-                        <h2 className="flex items-center justify-center">10% OFF NA PRIMEIRA COMPRA.</h2>
+                        <h2 className="flex items-center justify-center"
+                        >ASSINE E NÃO PERCA NENHUMA DAS
+                        </h2>
+                        <h2 className="flex items-center justify-center"
+                        >NOSSAS NOVIDADES E PROMOÇÕES.</h2>
                     </div>
                         <EmailForm />
                     <div className="flex-col gap-5 space-y-4">

@@ -17,18 +17,23 @@ interface CustomerProps {
 export const PagLogado = () => {
   const [customers, setCustomers] = useState<CustomerProps[]>([]);
 
-  useEffect(() => {
-    loadCustomers();
-  }, []);
+  // useEffect(() => {
+  //   loadCustomers();
+  // }, []);
 
-  async function loadCustomers() {
-    try {
-      const response = await api.get('/clientes');  
-      setCustomers(response.data.array);
-    } catch (error) {
-      console.error("Erro ao carregar os clientes", error);
-    }
-  }
+  // async function loadCustomers() {
+  //   try {
+  //     const response = api.get("/login/token", {
+  //       headers: {
+  //         Authorization: `Bearer ${localStorage.getItem('token')}`
+  //       }
+  //     })
+  //     console.log(response)  
+  //     setCustomers(response.data.array);
+  //   } catch (error) {
+  //     console.error("Erro ao carregar os clientes", error);
+  //   }
+  // }
 
   return (
     <div className="flex flex-col gap-10">
@@ -52,7 +57,7 @@ export const PagLogado = () => {
                       <Pencil/>   
                       </div>
                       <div className="flex justify-between">
-                      <p><span className="font-medium">Senha:</span> {customer.password}</p> 
+                      <p><span className="font-medium">Senha:</span>*****************</p> 
                       <Pencil/>  
                       </div>
                       {/* <p><span className="font-medium">Tipo:</span> {customer.isAdmin ? "Admin" : "Cliente"}</p>  */}

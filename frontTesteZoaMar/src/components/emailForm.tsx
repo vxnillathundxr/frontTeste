@@ -40,7 +40,7 @@ const EmailForm: React.FC = () => {
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Seu melhor email"
+          placeholder="Seu E-mail"
           className="border border-white md:p-3 p-1 w-96 md:mt-20 bg-transparent rounded"
           required
         />

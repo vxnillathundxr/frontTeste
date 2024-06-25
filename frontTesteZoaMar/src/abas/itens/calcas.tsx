@@ -15,7 +15,7 @@ interface ProdutosProps {
     departmentName: string;
     description: string;
     color: string;
-    image: string;
+    imagePath: string;
     array: string;
 }
 
@@ -49,7 +49,7 @@ export function Calcas(){
                             key={produto.id}
                             >
                             <CardProduto
-                                image={produto.image}
+                                imagePath={produto.imagePath}
                                 name={produto.name}
                                 price={produto.price}
                                 priceWithDiscount={produto.priceWithDiscount}

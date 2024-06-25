@@ -14,7 +14,7 @@ interface ProdutosProps {
     departmentName: string;
     description: string;
     color: string;
-    image: string;
+    imagePath: string;
     array: string;
 }
 
@@ -28,7 +28,7 @@ export function Camisetas(){
     }, [])
 
     async function loadproducts() {
-        const response = await api.get("/produtos/3?forSale=true") 
+        const response = await api.get("/produtos/2?forSale=true") 
         setProdutos(response.data);
     }
     return(
@@ -48,7 +48,7 @@ export function Camisetas(){
                             key={produto.id}
                             >
                             <CardProduto
-                                image={produto.image}
+                                imagePath={produto.imagePath}
                                 name={produto.name}
                                 price={produto.price}
                                 priceWithDiscount={produto.priceWithDiscount}
